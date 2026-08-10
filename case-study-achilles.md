@@ -70,7 +70,7 @@ The specific challenge: CoffeeDB.pro has structured data on beans, roasters, sco
 
 **CTA:**
 
-> [Email: pawel@example.com] or [Book a 15-minute call]
+> [Email: pawel.pikulik@velans.com] or [Book a 15-minute call]
 
 *(No form. One click. No social links. No distractions.)*
 

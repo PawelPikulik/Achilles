@@ -18,7 +18,7 @@
 | 12 | Write and post deliverables to course track threads | **Delegate to AI with review** | AI helps me format, structure, and proofread. I review every line to ensure it matches what I actually did and thought. |
 | 13 | Plan weekly project milestones and estimate hours per task | **Collaborate with AI** | AI helps me break down vague goals into concrete steps, but I set the deadlines based on my actual calendar and energy. |
 | 14 | Monitor API costs and usage limits for live data sources (CoffeeDB.pro, LLM APIs) | **Just me** | I need to understand the billing model and catch anomalies. AI can help set up alerts, but I must verify the numbers and act on them. |
-| 15 | Record and review voice/video notes for brainstorming or feedback | **Fully automate** | Transcription tools ( Whisper, etc.) convert speech to text with no review needed for raw brainstorming. I only review if the transcript becomes a deliverable. |
+| 15 | Record and review voice/video notes for brainstorming or feedback | **Fully automate** | Transcription tools (Whisper, etc.) convert speech to text with no review needed for raw brainstorming. I only review if the transcript becomes a deliverable. |
 
 ---
 

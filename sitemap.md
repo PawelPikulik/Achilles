@@ -6,7 +6,7 @@
 - **Purpose**: Name the Head of AI's exact problem in 5 seconds, not just state your skill. A diagnosis, not a claim.
 - **Content**:
   - Headline (diagnosis): "You have a domain API. I turn it into a product people actually talk to."
-  - One-line proof teaser: "Case study: built a conversational coffee expert from a raw data API in [X days/weeks]."
+  - One-line proof teaser: "Case study: built a conversational coffee expert from a raw data API ."
   - Hero visual: Achilles answering a coffee question in real-time.
   - Primary CTA: "See how it works" → Work/Case study page.
   - No secondary CTA. One action, no distractions.
