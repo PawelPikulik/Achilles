@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Ethiopia Yirgacheffe G1",
+    "origin": "Ethiopia, Yirgacheffe",
+    "roaster": "Velans Coffee Roasters",
+    "score": 87.5,
+    "flavor_notes": ["blueberry", "jasmine", "lemon", "black tea"]
+  },
+  {
+    "name": "Kenya AA Nyeri",
+    "origin": "Kenya, Nyeri",
+    "roaster": "Velans Coffee Roasters",
+    "score": 89.0,
+    "flavor_notes": ["blackcurrant", "raspberry", "grapefruit", "tomato"]
+  },
+  {
+    "name": "Colombia Huila Pink Bourbon",
+    "origin": "Colombia, Huila",
+    "roaster": "Velans Coffee Roasters",
+    "score": 88.0,
+    "flavor_notes": ["strawberry", "guava", "caramel", "milk chocolate"]
+  }
+]
