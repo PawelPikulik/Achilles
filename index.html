@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achilles — Domain-Specific AI Products, API to UI</title>
+  <meta name="description" content="I ship domain-specific AI products from API to UI. Achilles, the AI Coffee Expert, is the proof.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========================= HERO ========================= -->
+  <header class="hero" id="hero">
+    <div class="hero-texture" aria-hidden="true">
+      <!-- AI-generated asset: see assets/screenshot-and-prompt-guide.md (Asset 1) -->
+      <img src="assets/generated/hero-texture.png" alt="" onerror="this.style.display='none'">
+    </div>
+    <div class="hero-content">
+      <p class="eyebrow">For Heads of AI evaluating domain-specific builders</p>
+      <h1>You have a domain API. I turn it into a product people actually talk to.</h1>
+      <p class="proof-teaser">Case study: built a conversational coffee expert from a raw data API — full stack, from integration to interface.</p>
+      <a href="#work" class="cta-primary">See how it works</a>
+    </div>
+    <div class="hero-screenshot">
+      <!-- Real capture: see assets/screenshot-and-prompt-guide.md (Screenshot 1) -->
+      <img src="assets/screenshots/hero-conversation.png" alt="Achilles answering a live coffee recommendation question" onerror="this.parentElement.classList.add('placeholder')">
+    </div>
+  </header>
+
+  <!-- ========================= WORK / CASE STUDY ========================= -->
+  <main>
+    <section class="work" id="work">
+      <div class="work-intro">
+        <p class="section-label">The Proof</p>
+        <h2>Head of AI: you have a raw domain API. Here's how to turn it into a conversational product, step by step.</h2>
+      </div>
+
+      <article class="case-beat">
+        <h3>The Problem</h3>
+        <p>You have a domain API with rich data. You need a product people actually talk to.</p>
+        <p>Heads of AI face this gap every week: the API exists, the data is there, but turning it into a conversational interface that people trust and use is a different problem. The raw data doesn't speak. Someone has to bridge it — handle the API integration, the conversation design, the memory, the error states, and the trust.</p>
+        <p>I chose coffee as the domain because it's complex enough to be real: flavor profiles, origins, brewing methods, and personal preferences. But the pattern applies to any domain API — health data, legal documents, inventory systems, anything.</p>
+      </article>
+
+      <article class="case-beat">
+        <h3>What I Did</h3>
+        <p class="lede">I built the full stack from API to UI.</p>
+        <ul class="decision-list">
+          <li><strong>API integration:</strong> Connected live CoffeeDB.pro data. Handled auth, rate limits, timeouts, and malformed responses. Defined explicit fallback behavior for every error case.</li>
+          <li><strong>Prompt engineering:</strong> Designed a 6-iteration prompt system that forces the model to check data availability, set honest confidence levels, and self-correct before answering.</li>
+          <li><strong>Memory design:</strong> Built persistent preference tracking so Achilles remembers taste profiles across sessions and improves recommendations over time.</li>
+          <li><strong>Cross-model testing:</strong> Ran the final prompt on both Claude and ChatGPT. Documented the honest differences in how each model handled missing data.</li>
+        </ul>
+
+        <div class="evidence-grid">
+          <figure>
+            <!-- Real capture: see assets/screenshot-and-prompt-guide.md (Screenshot 2) -->
+            <img src="assets/screenshots/code-api-integration.png" alt="CoffeeDB API integration code with retry logic and error handling" onerror="this.parentElement.classList.add('placeholder')">
+            <figcaption>Production-grade API integration: auth, retries, structured logging.</figcaption>
+          </figure>
+          <figure>
+            <!-- Real capture: see assets/screenshot-and-prompt-guide.md (Screenshot 3) -->
+            <img src="assets/screenshots/api-response-json.png" alt="Parsed CoffeeDB.pro response validated with Pydantic" onerror="this.parentElement.classList.add('placeholder')">
+            <figcaption>Live data, validated and structured before it reaches the conversation layer.</figcaption>
+          </figure>
+        </div>
+
+        <div class="architecture-diagram">
+          <!-- AI-generated asset: see assets/screenshot-and-prompt-guide.md (Asset 2) -->
+          <img src="assets/generated/architecture-diagram.png" alt="Architecture diagram: API to processing engine to conversational response" onerror="this.parentElement.classList.add('placeholder')">
+        </div>
+      </article>
+
+      <article class="case-beat">
+        <h3>What Came of It</h3>
+        <p><strong>The prompt works.</strong> The final version eliminates hallucinations of database entries, maintains honest confidence levels, and pivots to relevant next steps. The API integration handles 95%+ of requests successfully with defined error states.</p>
+        <p><strong>The proof is specific.</strong> This isn't a generic "AI chatbot" project. It shows a Head of AI exactly what they need: someone who can take their raw domain API, design the conversation layer, build the memory, and ship it — with documented tradeoffs and honest cross-model evaluation.</p>
+
+        <div class="evidence-grid single">
+          <figure>
+            <!-- Real capture: see assets/screenshot-and-prompt-guide.md (Screenshot 5) -->
+            <img src="assets/screenshots/cross-model-comparison.png" alt="Cross-model comparison table: Claude vs ChatGPT honest evaluation" onerror="this.parentElement.classList.add('placeholder')">
+            <figcaption>Honest cross-model evaluation — Claude vs. ChatGPT, documented without spin.</figcaption>
+          </figure>
+        </div>
+
+        <p><strong>The template is reusable.</strong> The prompt engineering framework and the agent structure can be adapted to any domain-specific API.</p>
+      </article>
+
+      <div class="mid-cta">
+        <p>Facing a similar API-to-UI problem?</p>
+        <a href="#contact" class="cta-secondary">Let's talk</a>
+      </div>
+
+      <!-- ===== CREDIBILITY STRIP (compressed About) ===== -->
+      <aside class="credibility-strip">
+        <div class="credibility-photo">
+          <!-- Real photo only: see assets/screenshot-and-prompt-guide.md -->
+          <img src="assets/headshot/headshot.jpg" alt="" onerror="this.parentElement.style.display='none'">
+        </div>
+        <ul class="credibility-points">
+          <li>Shipped production systems with ambiguous specs and cross-functional requirements.</li>
+          <li>This is not a one-off — the same pattern applies to any domain-specific API.</li>
+          <li>Full stack: integration, prompt engineering, memory, and honest cross-model evaluation, documented end to end.</li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- ========================= CONTACT ========================= -->
+    <section class="contact" id="contact">
+      <h2>Building a domain-specific AI product? Let's talk about turning your API into something people actually use.</h2>
+      <p>You have the data. I have the pattern. One project, from API to UI, with honest architecture decisions and documented tradeoffs.</p>
+      <a href="mailto:pawel.pikulik@velans.com" class="cta-primary">Email me</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Achilles AI Coffee Expert — a proof-of-work portfolio. <a href="https://github.com/PawelPikulik/FlyRank">View the repo</a></p>
+  </footer>
+
+</body>
+</html>
