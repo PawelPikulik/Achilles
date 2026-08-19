@@ -1,8 +1,10 @@
 /* ==========================================================================
    Achilles Portfolio — "Dark Roast Precision" Style System
-   Deep espresso/charcoal backgrounds, warm amber/copper accents,
-   minimal, technical, precise. No bright colors, no stock-art gradients.
+   Identity Kit: Space Grotesk (headings) + Inter (body).
+   Palette: Charcoal, Cream, Copper, Muted. 4 colors, no noise.
    ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
 
 :root {
   --charcoal: #17130f;
@@ -14,7 +16,8 @@
   --muted: #a89a86;
   --border: #3a2d20;
 
-  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-heading: "Space Grotesk", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
 
   --max-width: 960px;
@@ -36,6 +39,11 @@ body {
   font-family: var(--font-body);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .eyebrow, .section-label {
+  font-family: var(--font-heading);
+  font-weight: 600;
 }
 
 a {
@@ -98,6 +106,7 @@ img {
   margin: 0 0 1.25rem;
   color: var(--cream);
   font-weight: 700;
+  letter-spacing: -0.01em;
 }
 
 .proof-teaser {
@@ -198,6 +207,7 @@ img {
   color: var(--cream);
   max-width: 700px;
   margin: 0 auto;
+  letter-spacing: -0.01em;
 }
 
 .case-beat {
@@ -391,6 +401,7 @@ img {
   color: var(--cream);
   line-height: 1.35;
   margin-bottom: 1rem;
+  letter-spacing: -0.01em;
 }
 
 .contact p {

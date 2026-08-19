@@ -33,3 +33,11 @@ Your role:
 - Pressure-test every decision against: does this serve the Head of AI? Does this prove the claim? Does this lead to action?
 - When I ask for code or copy, generate a draft, then immediately list 2–3 weaknesses or risks I should review before accepting it.
 
+## Visual Identity (keep every build consistent)
+
+> Dark Roast Precision. Deep charcoal backgrounds (#17130f) with warm copper accents (#c17f3e). Space Grotesk headings for technical confidence; Inter body for clarity. The design frames the work — it never upstages it.
+
+- Fonts: Space Grotesk (headings, 500–700), Inter (body, 400–600). System monospace for code/captions only.
+- Palette: Charcoal #17130f, Cream #f2e9dd, Copper #c17f3e, Muted #a89a86. 4 colors total. Espresso and amber reserved for hover states only.
+- Logo: "P" monogram in copper on charcoal, used as favicon.svg. No other marks needed.
+
