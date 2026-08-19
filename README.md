@@ -1,4 +1,4 @@
-# FlyRank Portfolio: Achilles AI Coffee Expert
+﻿# FlyRank Portfolio: Achilles AI Coffee Expert
 
 **One claim:** I can ship domain-specific AI products from API to UI.
 **One person:** A Head of AI who needs to turn a raw domain API into a live, conversational product.
@@ -24,6 +24,7 @@ This repo is the proof. Every file earns its place.
 | **Week 02 — Case Study** | [`case-study-achilles.md`](case-study-achilles.md) | Framed case study with 3 beats (problem, what I did, what came of it), voice card, bio copy, CTA copy, 3 before/after examples, editing checklist. |
 | **Week 03 — Curated Image Set** | [`curated-image-set.md`](curated-image-set.md) | 8-image keeper set mapped to sitemap, style spec for AI-generated images, rejection note with specific judgment, real vs. AI decisions. |
 | **Week 03 — Asset Guide** | [`assets/screenshot-and-prompt-guide.md`](assets/screenshot-and-prompt-guide.md) | Screenshot checklist for 5 real captures + tool-specific AI image prompts (DALL-E, Midjourney, Stable Diffusion) with negative prompts and rejection criteria. |
+| **Week 03 — Identity Kit** | [identity-kit.md](identity-kit.md) | Fonts (Space Grotesk + Inter), 4-color palette with hex codes, favicon.svg monogram, two-line style note added to Claude Project. |
 | **Live Site** | [`index.html`](index.html) / [`styles.css`](styles.css) | The built portfolio: Hero, Work/Case Study, Credibility Strip, Contact — implementing the "Dark Roast Precision" style. Images referenced with graceful placeholders until real assets are added. |
 | **Backend AI — W2 A1: CRUD API** | [`Artificiall`](https://github.com/PawelPikulik/Artificiall) | FastAPI in-memory task API. Full CRUD, validation, Swagger UI, 400/404 status codes, extras (filter, search, stats, reset), Stage 7 AI rematch. 8 meaningful commits. |
 
@@ -61,6 +62,7 @@ Everything links back to the claim: *domain-specific AI products from API to UI.
 | Prompt engineering log (6 versions, cross-model comparison) | ✅ Final |
 | Prompt ladder (baseline + 5 versions, honest notes) | ✅ Final |
 | Case study (3 beats, voice card, before/after) | ✅ Final |
+| Identity kit (fonts, palette, favicon, style note) | ✅ Final |
 | Image set (8 keepers, style spec, rejection note) | ⚠️ Documented; screenshots and AI images to be captured/generated |
 | Live portfolio site (Hero, Work, Credibility Strip, Contact) | ⚠️ Built (`index.html` + `styles.css`); real screenshots/images pending |
 | Achilles API integration (live CoffeeDB.pro connection) | ⏳ Not yet built |
