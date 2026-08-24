@@ -1,0 +1,1 @@
+MCP test successful. This file was created by the MCP filesystem server, not by chat.
