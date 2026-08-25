@@ -26,7 +26,7 @@ This repo is the proof. Every file earns its place.
 | **Week 03 — Asset Guide** | [`assets/screenshot-and-prompt-guide.md`](assets/screenshot-and-prompt-guide.md) | Screenshot checklist for 5 real captures + tool-specific AI image prompts (DALL-E, Midjourney, Stable Diffusion) with negative prompts and rejection criteria. |
 | **Week 03 — Identity Kit** | [identity-kit.md](identity-kit.md) | Fonts (Space Grotesk + Inter), 4-color palette with hex codes, favicon.svg monogram, two-line style note added to Claude Project. |
 | **Week 04 — Three Roads (Stack Choice)** | [three-roads.md](three-roads.md) | Three genuine stack options with trade-offs, pressure-test, and honest decision: static HTML on GitHub Pages. |
-| **Live Site** | [`index.html`](index.html) / [`styles.css`](styles.css) | The built portfolio: Hero, Work/Case Study, Credibility Strip, Contact — implementing the "Dark Roast Precision" style. Images referenced with graceful placeholders until real assets are added. |
+| **Week 04 — Empty but Live** | [`empty-but-live.md`](empty-but-live.md) | GitHub Pages blank page status, screenshot evidence, activation steps, and content map readiness. |
 | **Week 04 — Agent Concepts & MCP** | [`agent-concepts-mcp.md`](agent-concepts-mcp.md) | Workflow vs agent distinction, FL-04 classification, MCP three primitives, working filesystem MCP server with evidence of three tool calls. |
 
 ---
@@ -66,6 +66,7 @@ Everything links back to the claim: *domain-specific AI products from API to UI.
 | Identity kit (fonts, palette, favicon, style note) | ✅ Final |
 | Three Roads stack choice (options, pressure-test, rationale) | ✅ Final |
 | Agent concepts & MCP (workflow vs agent, MCP server, three tasks) | ✅ Final |
+| Empty but Live (GitHub Pages status, screenshot, content ready) | ✅ Documented; Pages pending enable in repo settings |
 | Image set (8 keepers, style spec, rejection note) | ⚠️ Documented; screenshots and AI images to be captured/generated |
 | Live portfolio site (Hero, Work, Credibility Strip, Contact) | ⚠️ Built (`index.html` + `styles.css`); real screenshots/images pending |
 | Achilles API integration (live CoffeeDB.pro connection) | ⏳ Not yet built |
