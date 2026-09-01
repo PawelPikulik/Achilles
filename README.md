@@ -29,6 +29,7 @@ This repo is the proof. Every file earns its place.
 | **Week 04 — Empty but Live** | [`empty-but-live.md`](empty-but-live.md) | GitHub Pages blank page status, 404 + live screenshots, activation steps, phone verification, and content map readiness. |
 | **Week 04 — Agent Concepts & MCP** | [`agent-concepts-mcp.md`](agent-concepts-mcp.md) | Workflow vs agent distinction, FL-04 classification, MCP three primitives, working filesystem MCP server with evidence of three tool calls. |
 | **Week 04 — Automation Workflow v2** | [`automation-workflow-v2.md`](automation-workflow-v2.md) | 4-step no-code pipeline (Draft → Critique → Revise → Format) run on 5 real deliverables. Claude Project instructions, time accounting, honest failure points. |
+| **Week 05 — Explain It Like You Built It** | [`explain-it-like-you-built-it.md`](explain-it-like-you-built-it.md) | Plain-words explanation of CSS Custom Properties (`:root` block) as the settings panel for the entire portfolio design system. Real code from `styles.css`, honest learning moment. |
 
 ---
 
@@ -69,6 +70,7 @@ Everything links back to the claim: *domain-specific AI products from API to UI.
 | Agent concepts & MCP (workflow vs agent, MCP server, three tasks) | ✅ Final |
 | Empty but Live (GitHub Pages status, screenshot, content ready) | ✅ Final — enabled and verified live on phone |
 | Automation workflow v2 (4-step pipeline, 5 runs, time accounting) | ✅ Final |
+| Explain It Like You Built It (CSS custom properties, real piece, own words) | ✅ Final |
 | Image set (8 keepers, style spec, rejection note) | ⚠️ Documented; screenshots and AI images to be captured/generated |
 | Live portfolio site (Hero, Work, Credibility Strip, Contact) | ⚠️ Built (`index.html` + `styles.css`); real screenshots/images pending |
 | Achilles API integration (live CoffeeDB.pro connection) | ⏳ Not yet built |
