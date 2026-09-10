@@ -32,6 +32,7 @@ This repo is the proof. Every file earns its place.
 | **Week 05 — Explain It Like You Built It** | [`explain-it-like-you-built-it.md`](explain-it-like-you-built-it.md) | Plain-words explanation of CSS Custom Properties (`:root` block) as the settings panel for the entire portfolio design system. Real code from `styles.css`, honest learning moment. |
 | **Week 05 — Design Your Personal Agent** | [`personal-agent-spec.md`](personal-agent-spec.md) | The Build Steward: read-only weekly repo auditor spec. Job, frequency, tools, draft instructions, 5 eval cases, guardrails, platform choice with rejected alternatives. |
 | **Week 05 — Build Steward Prompt & Evals** | [`build-steward-prompt-and-evals.md`](build-steward-prompt-and-evals.md) | Refined system prompt (5-step workflow + on-demand trigger) and 5 evaluation cases with setup/expected/pass criteria. Ready to paste into a Claude Project. |
+| **Week 05 — Build the Agent (FL-07)** | [`build_steward_agent.py`](build_steward_agent.py) + [`build-log-fl07.md`](build-log-fl07.md) + [`build-steward-run.txt`](build-steward-run.txt) | Working Build Steward: Python script connecting to MCP filesystem server, 5-step workflow end to end, build log with 5 bugs fixed, unedited run capture. |
 
 ---
 
@@ -75,6 +76,7 @@ Everything links back to the claim: *domain-specific AI products from API to UI.
 | Explain It Like You Built It (CSS custom properties, real piece, own words) | ✅ Final |
 | Design Your Personal Agent — Build Steward spec (job, evals, guardrails, platform) | ✅ Final |
 | Build Steward system prompt & evaluation cases (ready to paste into Claude Project) | ✅ Final |
+| Build the Agent — working Build Steward script, build log, unedited run capture | ✅ Final |
 | Image set (8 keepers, style spec, rejection note) | ⚠️ Documented; screenshots and AI images to be captured/generated |
 | Live portfolio site (Hero, Work, Credibility Strip, Contact) | ⚠️ Built (`index.html` + `styles.css`); real screenshots/images pending |
 | Achilles API integration (live CoffeeDB.pro connection) | ⏳ Not yet built |

@@ -1,0 +1,306 @@
+# Build Steward — Weekly Review Report
+
+*Generated: 2026-09-10 16:15 UTC*
+*Runtime: 1.0s*
+
+---
+
+## 1. Status Table Summary
+
+| Item | Claimed Status |
+|------|----------------|
+| Proof statement (claim + person + action) | ✅ Final |
+| Sitemap (4 pages, post pressure-test) | ✅ Final |
+| Claude Project configured | ✅ Instructions documented |
+| Workflow audit (15 tasks, 4 classifications) | ✅ Final |
+| Target tasks (3 tasks, measurable definitions) | ✅ Final |
+| Pressure-test run + output saved | ✅ Final |
+| Prompt engineering log (6 versions, cross-model comparison) | ✅ Final |
+| Prompt ladder (baseline + 5 versions, honest notes) | ✅ Final |
+| Case study (3 beats, voice card, before/after) | ✅ Final |
+| Identity kit (fonts, palette, favicon, style note) | ✅ Final |
+| Three Roads stack choice (options, pressure-test, rationale) | ✅ Final |
+| Agent concepts & MCP (workflow vs agent, MCP server, three tasks) | ✅ Final |
+| Empty but Live (GitHub Pages status, screenshot, content ready) | ✅ Final — enabled and verified live on phone |
+| Automation workflow v2 (4-step pipeline, 5 runs, time accounting) | ✅ Final |
+| Explain It Like You Built It (CSS custom properties, real piece, own words) | ✅ Final |
+| Design Your Personal Agent — Build Steward spec (job, evals, guardrails, platform) | ✅ Final |
+| Build Steward system prompt & evaluation cases (ready to paste into Claude Project) | ✅ Final |
+| Image set (8 keepers, style spec, rejection note) | ⚠️ Documented; screenshots and AI images to be captured/generated |
+| Live portfolio site (Hero, Work, Credibility Strip, Contact) | ⚠️ Built (`index.html` + `styles.css`); real screenshots/images pending |
+| Achilles API integration (live CoffeeDB.pro connection) | ⏳ Not yet built |
+| Achilles conversation interface (prompts + memory) | ⏳ Not yet built |
+
+---
+
+## 2. File Cross-Check
+
+### achilles-proof-statement.md
+- **course-internal** (line 13): `Week 01`
+
+### agent-concepts-mcp.md
+- **course-internal** (line 9): `FL-04`
+- **course-internal** (line 11): `FL-04`
+- **course-internal** (line 45): `FL-04`
+- **course-internal** (line 47): `FL-04`
+
+### automation-workflow-v2.md
+- **placeholder** (line 138): `[relevant background — add if you have it]`
+- **placeholder** (line 145): `[relevant background — add if you have it]`
+- **placeholder** (line 236): `[relevant background — add if you have it]`
+- **placeholder** (line 261): `[placeholder]`
+- **course-internal** (line 1): `FL-04`
+- **course-internal** (line 3): `Deliverable`
+- **course-internal** (line 11): `deliverable`
+- **course-internal** (line 19): `Deliverable`
+- **course-internal** (line 29): `deliverable`
+- **course-internal** (line 57): `deliverable`
+- **course-internal** (line 120): `FL-03`
+- **course-internal** (line 131): `deliverable`
+- **course-internal** (line 144): `FL-03`
+- **course-internal** (line 147): `FL-03`
+- **course-internal** (line 161): `FL-03`
+- **course-internal** (line 161): `FL-03`
+- **course-internal** (line 168): `FL-03`
+- **course-internal** (line 171): `FL-03`
+- **course-internal** (line 185): `deliverable`
+- **course-internal** (line 189): `deliverable`
+- **course-internal** (line 213): `deliverable`
+- **course-internal** (line 237): `FL-03`
+- **course-internal** (line 237): `assignment`
+- **course-internal** (line 247): `assignment`
+
+### build-steward-prompt-and-evals.md
+- **placeholder** (line 135): `[relevant background — add if you have it]`
+- **course-internal** (line 63): `deliverable`
+- **course-internal** (line 66): `FL-03`
+- **course-internal** (line 66): `FL-04`
+- **course-internal** (line 66): `Week 4`
+- **course-internal** (line 66): `assignment`
+- **course-internal** (line 66): `deliverable`
+- **course-internal** (line 155): `FL-03`
+- **course-internal** (line 159): `FL-03`
+- **course-internal** (line 164): `FL-03`
+- **course-internal** (line 258): `assignment`
+- **course-internal** (line 258): `deliverable`
+- **missing-asset** (line 176): `assets/screenshots/does-not-exist.png`
+- **broken-link** (line 69): `file.md`
+
+### case-study-achilles.md
+- **placeholder** (line 57): `[relevant background — add if you have it]`
+- **course-internal** (line 29): `assignment`
+
+### claude-project-setup.md
+- **course-internal** (line 16): `Week 01`
+- **course-internal** (line 17): `Week 02`
+- **course-internal** (line 18): `Week 05`
+
+- **curated-image-set.md** — Passes. No flags.
+### empty-but-live.md
+- **missing-asset** (line 7): `assets/screenshots/github-pages-404-before-enable.png`
+
+- **explain-it-like-you-built-it.md** — Passes. No flags.
+- **identity-kit.md** — Passes. No flags.
+### personal-agent-spec.md
+- **placeholder** (line 134): `[relevant background — add if you have it]`
+- **course-internal** (line 3): `FL-06`
+- **course-internal** (line 11): `deliverable`
+- **course-internal** (line 37): `Deliverable`
+- **course-internal** (line 54): `FL-04`
+- **course-internal** (line 88): `deliverable`
+- **course-internal** (line 91): `FL-03`
+- **course-internal** (line 91): `Week 4`
+- **course-internal** (line 91): `assignment`
+- **course-internal** (line 142): `FL-03`
+- **course-internal** (line 144): `FL-03`
+- **course-internal** (line 200): `FL-03`
+- **course-internal** (line 211): `FL-04`
+- **course-internal** (line 251): `deliverable`
+- **missing-asset** (line 150): `assets/screenshots/does-not-exist.png`
+- **broken-link** (line 93): `file.md`
+
+- **pressure-test-output.md** — Passes. No flags.
+### pressure-test-prompt.md
+- **course-internal** (line 32): `Deliverable`
+
+### prompt-engineering-log.md
+- **course-internal** (line 1): `FL-02`
+- **course-internal** (line 3): `FL-01`
+- **course-internal** (line 28): `Assignment`
+- **course-internal** (line 30): `assignment`
+- **course-internal** (line 43): `assignment`
+
+- **prompt-ladder-apicode.md** — Passes. No flags.
+### README.md
+- **placeholder** (line 23): `[`prompt-ladder-apicode.md`]`
+- **course-internal** (line 48): `Week 01`
+- **course-internal** (line 49): `Week 02`
+- **course-internal** (line 50): `Week 03`
+
+- **sitemap.md** — Passes. No flags.
+### target-tasks.md
+- **course-internal** (line 1): `FL-02`
+- **course-internal** (line 1): `FL-04`
+- **course-internal** (line 10): `FL-02`
+- **course-internal** (line 15): `FL-03`
+- **course-internal** (line 22): `FL-02`
+- **course-internal** (line 22): `deliverable`
+- **course-internal** (line 34): `FL-02`
+- **course-internal** (line 39): `FL-03`
+
+- **three-roads.md** — Passes. No flags.
+### through-line.md
+- **course-internal** (line 99): `FL-03`
+- **course-internal** (line 100): `FL-03`
+- **course-internal** (line 101): `FL-03`
+- **course-internal** (line 102): `FL-03`
+- **course-internal** (line 103): `FL-03`
+- **course-internal** (line 104): `FL-04`
+- **course-internal** (line 105): `FL-03`
+- **course-internal** (line 106): `FL-03`
+- **course-internal** (line 108): `FL-03`
+- **course-internal** (line 108): `FL-03`
+
+### TRACK-POST.md
+- **placeholder** (line 21): `[`prompt-ladder-apicode.md`]`
+- **placeholder** (line 37): `[`assets/screenshots/prompt-ladder-v0-vs-v5.png`]`
+- **course-internal** (line 13): `Week 01`
+- **course-internal** (line 18): `Week 02`
+- **course-internal** (line 23): `Week 03`
+- **course-internal** (line 43): `Deliverable`
+- **broken-link** (line 14): `https://github.com/PawelPikulik/FlyRank/blob/main/sitemap.md`
+- **broken-link** (line 15): `https://github.com/PawelPikulik/FlyRank/blob/main/claude-project-setup.md`
+- **broken-link** (line 15): `https://github.com/PawelPikulik/FlyRank/blob/main/pressure-test-output.md`
+- **broken-link** (line 16): `https://github.com/PawelPikulik/FlyRank/blob/main/workflow-audit.md`
+- **broken-link** (line 16): `https://github.com/PawelPikulik/FlyRank/blob/main/target-tasks.md`
+- **broken-link** (line 19): `https://github.com/PawelPikulik/FlyRank/blob/main/case-study-achilles.md`
+- **broken-link** (line 20): `https://github.com/PawelPikulik/FlyRank/blob/main/prompt-engineering-log.md`
+- **broken-link** (line 21): `https://github.com/PawelPikulik/FlyRank/blob/main/prompt-ladder-apicode.md`
+- **broken-link** (line 24): `https://github.com/PawelPikulik/FlyRank/blob/main/curated-image-set.md`
+- **broken-link** (line 25): `https://github.com/PawelPikulik/FlyRank/blob/main/assets/screenshot-and-prompt-guide.md`
+
+### workflow-audit.md
+- **course-internal** (line 21): `deliverable`
+
+- **index.html** — Passes. No flags.
+
+---
+
+## 3. Pressure-Test Flags
+
+### automation-workflow-v2.md
+- **CLAIM** (line 54): Contains generic buzzword 'state-of-the-art' — does not support the specific claim.
+  > `VOICE CONSTRAINT: Every rewrite must preserve my voice: direct, warm, precise, no filler, no buzzwords (leverage, synerg`
+- **CLAIM** (line 54): Contains generic buzzword 'holistic' — does not support the specific claim.
+  > `VOICE CONSTRAINT: Every rewrite must preserve my voice: direct, warm, precise, no filler, no buzzwords (leverage, synerg`
+- **CLAIM** (line 54): Contains generic buzzword 'results-driven' — does not support the specific claim.
+  > `VOICE CONSTRAINT: Every rewrite must preserve my voice: direct, warm, precise, no filler, no buzzwords (leverage, synerg`
+- **AUDIENCE** (line 69): States builder skill ('AI-powered solutions') instead of naming the Head of AI's problem.
+  > `- Generic language that could apply to any portfolio ("I build AI-powered solutions")`
+- **ACTION** (line 71): Vague CTA ('get in touch') — does not bridge to a concrete next step.
+  > `- CTAs that are vague or missing ("get in touch" instead of "Let's turn your API into a product")`
+
+### build-steward-prompt-and-evals.md
+- **CLAIM** (line 47): Contains generic buzzword 'leverage' — does not support the specific claim.
+  > `Forbidden words in your output: leverage, synergy, cutting-edge, state-of-the-art,`
+- **CLAIM** (line 47): Contains generic buzzword 'synergy' — does not support the specific claim.
+  > `Forbidden words in your output: leverage, synergy, cutting-edge, state-of-the-art,`
+- **CLAIM** (line 47): Contains generic buzzword 'cutting-edge' — does not support the specific claim.
+  > `Forbidden words in your output: leverage, synergy, cutting-edge, state-of-the-art,`
+- **CLAIM** (line 47): Contains generic buzzword 'state-of-the-art' — does not support the specific claim.
+  > `Forbidden words in your output: leverage, synergy, cutting-edge, state-of-the-art,`
+- **CLAIM** (line 48): Contains generic buzzword 'holistic' — does not support the specific claim.
+  > `holistic, results-driven, optimize, streamline, empower.`
+- **CLAIM** (line 48): Contains generic buzzword 'results-driven' — does not support the specific claim.
+  > `holistic, results-driven, optimize, streamline, empower.`
+- **CLAIM** (line 48): Contains generic buzzword 'optimize' — does not support the specific claim.
+  > `holistic, results-driven, optimize, streamline, empower.`
+- **CLAIM** (line 48): Contains generic buzzword 'streamline' — does not support the specific claim.
+  > `holistic, results-driven, optimize, streamline, empower.`
+- **CLAIM** (line 48): Contains generic buzzword 'empower' — does not support the specific claim.
+  > `holistic, results-driven, optimize, streamline, empower.`
+- **CLAIM** (line 199): Contains generic buzzword 'cutting-edge' — does not support the specific claim.
+  > `I am a skilled developer who leverages cutting-edge AI to deliver holistic solutions.`
+- **CLAIM** (line 199): Contains generic buzzword 'holistic' — does not support the specific claim.
+  > `I am a skilled developer who leverages cutting-edge AI to deliver holistic solutions.`
+- **CLAIM** (line 209): Contains generic buzzword 'holistic' — does not support the specific claim.
+  > `Additionally, the agent should note the voice violation: "Forbidden buzzwords: leverage, cutting-edge, holistic."`
+- **AUDIENCE** (line 199): States builder skill ('skilled developer') instead of naming the Head of AI's problem.
+  > `I am a skilled developer who leverages cutting-edge AI to deliver holistic solutions.`
+- **AUDIENCE** (line 207): States builder skill ('skilled developer') instead of naming the Head of AI's problem.
+  > `- **CLAIM** — "generic language ('skilled developer', 'holistic solutions') does not support the specific claim of shipp`
+
+### case-study-achilles.md
+- **CLAIM** (line 108): Contains generic buzzword 'state-of-the-art' — does not support the specific claim.
+  > `> "I spearheaded the integration of a third-party API and implemented state-of-the-art prompt engineering strategies to `
+- **CLAIM** (line 108): Contains generic buzzword 'optimize' — does not support the specific claim.
+  > `> "I spearheaded the integration of a third-party API and implemented state-of-the-art prompt engineering strategies to `
+- **CLAIM** (line 120): Contains generic buzzword 'state-of-the-art' — does not support the specific claim.
+  > `- [x] No buzzwords (leverage, synergy, cutting-edge, state-of-the-art, holistic, results-driven).`
+- **CLAIM** (line 120): Contains generic buzzword 'holistic' — does not support the specific claim.
+  > `- [x] No buzzwords (leverage, synergy, cutting-edge, state-of-the-art, holistic, results-driven).`
+- **CLAIM** (line 120): Contains generic buzzword 'results-driven' — does not support the specific claim.
+  > `- [x] No buzzwords (leverage, synergy, cutting-edge, state-of-the-art, holistic, results-driven).`
+
+### personal-agent-spec.md
+- **CLAIM** (line 158): Contains generic buzzword 'cutting-edge' — does not support the specific claim.
+  > `**Setup:** Append a new paragraph to `case-study-achilles.md`: `I am a skilled developer who leverages cutting-edge AI t`
+- **CLAIM** (line 158): Contains generic buzzword 'holistic' — does not support the specific claim.
+  > `**Setup:** Append a new paragraph to `case-study-achilles.md`: `I am a skilled developer who leverages cutting-edge AI t`
+- **AUDIENCE** (line 158): States builder skill ('skilled developer') instead of naming the Head of AI's problem.
+  > `**Setup:** Append a new paragraph to `case-study-achilles.md`: `I am a skilled developer who leverages cutting-edge AI t`
+
+### pressure-test-output.md
+- **AUDIENCE** (line 16): States builder skill ('expert in') instead of naming the Head of AI's problem.
+  > `- Add a one-line proof teaser under the headline (e.g. "Case study: turned a coffee-data API into a conversational exper`
+- **ACTION** (line 42): Vague CTA ('reach out') — does not bridge to a concrete next step.
+  > `Almost always the weakest page on any portfolio, and it's usually generic by default — "I'm a builder who loves AI and c`
+- **ACTION** (line 60): Vague CTA ('Get in touch') — does not bridge to a concrete next step.
+  > `Should be the most specific page on the site, and usually is by default — but check: does the CTA copy speak to *their* `
+- **ACTION** (line 70): Vague CTA ('reach out') — does not bridge to a concrete next step.
+  > `- Lower friction — don't make them fill out a long form to "reach out." Email/Calendly link, one click.`
+
+### pressure-test-prompt.md
+- **ACTION** (line 10): Vague CTA ('reach out') — does not bridge to a concrete next step.
+  > `4. Contact page — the action: get the Head of AI to reach out`
+
+### prompt-engineering-log.md
+- **AUDIENCE** (line 267): States builder skill ('expert in') instead of naming the Head of AI's problem.
+  > `You are [AGENT NAME], an AI expert in [DOMAIN]. Your job is to answer [QUERY TYPE] using live data from [DATA SOURCE].`
+
+### sitemap.md
+- **ACTION** (line 49): Vague CTA ('get in touch') — does not bridge to a concrete next step.
+  > `- **Contact**: One click, no friction. CTA speaks to their need, not generic "get in touch."`
+
+### through-line.md
+- **ACTION** (line 87): Vague CTA ('reach out') — does not bridge to a concrete next step.
+  > `| Hero | "See how it works" | → Work | Belief before action. They need proof before they reach out. |`
+
+
+---
+
+## 4. Repo Hygiene
+
+- **Uncommitted files:** 2
+  - `?? build-steward-run.txt`
+  - `?? build_steward_agent.py`
+- **Last commit:** 2026-09-09
+- **Recent commits:**
+  - `0548d7c Week 5: Build Steward system prompt and evaluation cases (2026-09-09 14:43:28 +0200)`
+  - `b3ef87c FL-06: Design Your Personal Agent — The Build Steward (2026-09-09 14:32:52 +0200)`
+  - `07456fe Week 5: Explain It Like You Built It (2026-09-01 16:46:32 +0200)`
+  - `299269f FL-04: Ship an Automation Workflow v2 (2026-08-28 15:24:31 +0200)`
+  - `fcf69ea Week 4: Empty but Live — add live screenshot, mark final (2026-08-26 00:11:52 +0200)`
+- **Repo freshness:** 1 days since last commit.
+
+---
+
+## 5. Priority Order for This Weekend
+
+1. Commit uncommitted deliverables before they drift.
+2. Fix 15 flagged file issue(s) (placeholders, missing assets, course-internal language).
+3. Review pressure-test flags — at least one file has weak claim/audience/action language.
+
+---
+
+*End of report.*
