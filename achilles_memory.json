@@ -68,6 +68,16 @@
         "role": "achilles",
         "text": "Try **Yirgacheffe G1** from Drop Coffee — Ethiopia, Washed process, Light roast. Score: 91. Notes: bergamot, jasmine, blueberry, citrus.",
         "ts": "2026-09-10T16:38:45.891910"
+      },
+      {
+        "role": "user",
+        "text": "What Ethiopian coffee has berry notes?",
+        "ts": "2026-09-10T18:06:06.489308"
+      },
+      {
+        "role": "achilles",
+        "text": "Try **Yirgacheffe G1** from Drop Coffee — Ethiopia, Washed process, Light roast. Score: 91. Notes: bergamot, jasmine, blueberry, citrus.",
+        "ts": "2026-09-10T18:06:06.490870"
       }
     ]
   },
@@ -135,6 +145,26 @@
         "role": "achilles",
         "text": "Try **Yirgacheffe G1** from Drop Coffee — Ethiopia, Washed process, Light roast. Score: 91. Notes: bergamot, jasmine, blueberry, citrus.",
         "ts": "2026-09-10T16:38:49.986137"
+      },
+      {
+        "role": "user",
+        "text": "I prefer natural processed coffees",
+        "ts": "2026-09-10T18:06:08.526548"
+      },
+      {
+        "role": "achilles",
+        "text": "Try **Hambela Bishan** from Tim Wendelboe — Ethiopia, Natural process, Light-Medium roast. Score: 89. Notes: strawberry, peach, chocolate, floral.",
+        "ts": "2026-09-10T18:06:08.526548"
+      },
+      {
+        "role": "user",
+        "text": "What do you recommend from Ethiopia?",
+        "ts": "2026-09-10T18:06:10.572408"
+      },
+      {
+        "role": "achilles",
+        "text": "Try **Yirgacheffe G1** from Drop Coffee — Ethiopia, Washed process, Light roast. Score: 91. Notes: bergamot, jasmine, blueberry, citrus.",
+        "ts": "2026-09-10T18:06:10.572408"
       }
     ]
   },
@@ -170,6 +200,16 @@
         "role": "achilles",
         "text": "Try **Brazil Cerrado** from Stumptown — Brazil, Natural process, Medium-Dark roast. Score: 84. Notes: chocolate, nut, caramel, low acidity.",
         "ts": "2026-09-10T16:38:52.012640"
+      },
+      {
+        "role": "user",
+        "text": "Something with chocolate and nutty flavors",
+        "ts": "2026-09-10T18:06:12.629077"
+      },
+      {
+        "role": "achilles",
+        "text": "Try **Brazil Cerrado** from Stumptown — Brazil, Natural process, Medium-Dark roast. Score: 84. Notes: chocolate, nut, caramel, low acidity.",
+        "ts": "2026-09-10T18:06:12.630587"
       }
     ]
   },
@@ -205,6 +245,16 @@
         "role": "achilles",
         "text": "I don't have a bean that matches that exactly. Ask me about origins (Ethiopia, Kenya, Colombia), flavor notes (berry, chocolate, citrus), or processes (washed, natural, anaerobic).",
         "ts": "2026-09-10T16:38:54.053935"
+      },
+      {
+        "role": "user",
+        "text": "Do you have any teas?",
+        "ts": "2026-09-10T18:06:14.664190"
+      },
+      {
+        "role": "achilles",
+        "text": "I don't have a bean that matches that exactly. Ask me about origins (Ethiopia, Kenya, Colombia), flavor notes (berry, chocolate, citrus), or processes (washed, natural, anaerobic).",
+        "ts": "2026-09-10T18:06:14.664190"
       }
     ]
   },
@@ -240,6 +290,16 @@
         "role": "achilles",
         "text": "Try **Colombia El Paraiso** from Square Mile — Colombia, Anaerobic process, Light roast. Score: 88. Notes: passion fruit, lychee, honey, vanilla.",
         "ts": "2026-09-10T16:38:56.097574"
+      },
+      {
+        "role": "user",
+        "text": "I want an anaerobic processed coffee",
+        "ts": "2026-09-10T18:06:16.724953"
+      },
+      {
+        "role": "achilles",
+        "text": "Try **Colombia El Paraiso** from Square Mile — Colombia, Anaerobic process, Light roast. Score: 88. Notes: passion fruit, lychee, honey, vanilla.",
+        "ts": "2026-09-10T18:06:16.725968"
       }
     ]
   },
@@ -275,6 +335,16 @@
         "role": "achilles",
         "text": "Try **Kenya AA Nyeri** from Intelligentsia — Kenya, Washed process, Medium roast. Score: 90. Notes: blackcurrant, tomato, lime, caramel.",
         "ts": "2026-09-10T16:38:58.140954"
+      },
+      {
+        "role": "user",
+        "text": "I want a washed coffee from Kenya",
+        "ts": "2026-09-10T18:06:18.760679"
+      },
+      {
+        "role": "achilles",
+        "text": "Try **Kenya AA Nyeri** from Intelligentsia — Kenya, Washed process, Medium roast. Score: 90. Notes: blackcurrant, tomato, lime, caramel.",
+        "ts": "2026-09-10T18:06:18.762284"
       }
     ]
   },
@@ -310,6 +380,16 @@
         "role": "achilles",
         "text": "Try **Sumatra Mandheling** from Counter Culture — Indonesia, Wet-Hulled process, Dark roast. Score: 86. Notes: earth, spice, cedar, dark chocolate.",
         "ts": "2026-09-10T16:39:00.206070"
+      },
+      {
+        "role": "user",
+        "text": "Recommend a dark roast",
+        "ts": "2026-09-10T18:06:20.832464"
+      },
+      {
+        "role": "achilles",
+        "text": "Try **Sumatra Mandheling** from Counter Culture — Indonesia, Wet-Hulled process, Dark roast. Score: 86. Notes: earth, spice, cedar, dark chocolate.",
+        "ts": "2026-09-10T18:06:20.834215"
       }
     ]
   },
@@ -345,6 +425,16 @@
         "role": "achilles",
         "text": "Try **Colombia El Paraiso** from Square Mile — Colombia, Anaerobic process, Light roast. Score: 88. Notes: passion fruit, lychee, honey, vanilla.",
         "ts": "2026-09-10T16:39:02.267488"
+      },
+      {
+        "role": "user",
+        "text": "Any good Colombian beans?",
+        "ts": "2026-09-10T18:06:22.863286"
+      },
+      {
+        "role": "achilles",
+        "text": "Try **Colombia El Paraiso** from Square Mile — Colombia, Anaerobic process, Light roast. Score: 88. Notes: passion fruit, lychee, honey, vanilla.",
+        "ts": "2026-09-10T18:06:22.863286"
       }
     ]
   },
@@ -380,6 +470,78 @@
         "role": "achilles",
         "text": "Try **Yirgacheffe G1** from Drop Coffee — Ethiopia, Washed process, Light roast. Score: 91. Notes: bergamot, jasmine, blueberry, citrus.",
         "ts": "2026-09-10T16:39:04.316224"
+      },
+      {
+        "role": "user",
+        "text": "Something fruity and light",
+        "ts": "2026-09-10T18:06:24.896690"
+      },
+      {
+        "role": "achilles",
+        "text": "Try **Yirgacheffe G1** from Drop Coffee — Ethiopia, Washed process, Light roast. Score: 91. Notes: bergamot, jasmine, blueberry, citrus.",
+        "ts": "2026-09-10T18:06:24.896690"
+      }
+    ]
+  },
+  "user_2v7yfc": {
+    "preferences": {
+      "preference": "natural"
+    },
+    "history": [
+      {
+        "role": "user",
+        "text": "What Ethiopian coffee has berry notes?",
+        "ts": "2026-09-10T18:05:25.435937"
+      },
+      {
+        "role": "achilles",
+        "text": "Try **Yirgacheffe G1** from Drop Coffee — Ethiopia, Washed process, Light roast. Score: 91. Notes: bergamot, jasmine, blueberry, citrus.",
+        "ts": "2026-09-10T18:05:25.438933"
+      },
+      {
+        "role": "user",
+        "text": "I prefer natural processed coffees",
+        "ts": "2026-09-10T18:05:27.036059"
+      },
+      {
+        "role": "achilles",
+        "text": "Try **Hambela Bishan** from Tim Wendelboe — Ethiopia, Natural process, Light-Medium roast. Score: 89. Notes: strawberry, peach, chocolate, floral.",
+        "ts": "2026-09-10T18:05:27.037569"
+      },
+      {
+        "role": "user",
+        "text": "What do you recommend from Ethiopia?",
+        "ts": "2026-09-10T18:05:28.635914"
+      },
+      {
+        "role": "achilles",
+        "text": "Try **Yirgacheffe G1** from Drop Coffee — Ethiopia, Washed process, Light roast. Score: 91. Notes: bergamot, jasmine, blueberry, citrus.",
+        "ts": "2026-09-10T18:05:28.637346"
+      },
+      {
+        "role": "user",
+        "text": "Do you have any teas?",
+        "ts": "2026-09-10T18:05:30.238796"
+      },
+      {
+        "role": "achilles",
+        "text": "I don't have a bean that matches that exactly. Ask me about origins (Ethiopia, Kenya, Colombia), flavor notes (berry, chocolate, citrus), or processes (washed, natural, anaerobic).",
+        "ts": "2026-09-10T18:05:30.238796"
+      }
+    ]
+  },
+  "demo": {
+    "preferences": {},
+    "history": [
+      {
+        "role": "user",
+        "text": "What Ethiopian coffee has berry notes?",
+        "ts": "2026-09-10T18:18:21.853012"
+      },
+      {
+        "role": "achilles",
+        "text": "Try **Yirgacheffe G1** from Drop Coffee — Ethiopia, Washed process, Light roast. Score: 91. Notes: bergamot, jasmine, blueberry, citrus.",
+        "ts": "2026-09-10T18:18:21.853012"
       }
     ]
   }
