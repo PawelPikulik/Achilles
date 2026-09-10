@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achilles — Coffee Expert</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Achilles chat overrides — inherits identity kit */
+    .chat-container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .chat-header {
+      text-align: center;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 1.5rem;
+    }
+
+    .chat-header h1 {
+      font-family: var(--font-heading);
+      font-size: 1.4rem;
+      color: var(--copper);
+      margin: 0 0 0.25rem;
+      letter-spacing: -0.01em;
+    }
+
+    .chat-header p {
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin: 0;
+    }
+
+    .chat-messages {
+      flex: 1;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    .message {
+      max-width: 85%;
+      padding: 0.9rem 1.15rem;
+      border-radius: var(--radius);
+      line-height: 1.55;
+      font-size: 0.95rem;
+      animation: fadeIn 0.2s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .message.user {
+      align-self: flex-end;
+      background: var(--espresso);
+      border: 1px solid var(--border);
+      color: var(--cream);
+    }
+
+    .message.achilles {
+      align-self: flex-start;
+      background: var(--espresso-light);
+      border: 1px solid var(--border);
+      color: var(--cream);
+    }
+
+    .message.achilles strong {
+      color: var(--amber);
+    }
+
+    .message-meta {
+      font-size: 0.72rem;
+      color: var(--muted);
+      margin-top: 0.4rem;
+      font-family: var(--font-mono);
+    }
+
+    .chat-input-row {
+      display: flex;
+      gap: 0.6rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .chat-input-row input {
+      flex: 1;
+      background: var(--espresso);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 0.7rem 1rem;
+      color: var(--cream);
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      outline: none;
+    }
+
+    .chat-input-row input::placeholder {
+      color: var(--muted);
+    }
+
+    .chat-input-row input:focus {
+      border-color: var(--copper);
+    }
+
+    .chat-input-row button {
+      background: var(--copper);
+      color: var(--charcoal);
+      border: none;
+      border-radius: var(--radius);
+      padding: 0.7rem 1.4rem;
+      font-family: var(--font-heading);
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: background 0.15s ease;
+    }
+
+    .chat-input-row button:hover {
+      background: var(--amber);
+    }
+
+    .chat-input-row button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .status-bar {
+      text-align: center;
+      font-size: 0.75rem;
+      color: var(--muted);
+      font-family: var(--font-mono);
+      padding: 0.4rem 0;
+    }
+
+    .status-bar .live { color: #4caf50; }
+    .status-bar .mock { color: var(--copper); }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <header class="chat-header">
+      <h1>Achilles</h1>
+      <p>AI Coffee Expert — ask about origins, flavors, roasters, or brewing methods</p>
+    </header>
+
+    <div class="chat-messages" id="chatMessages">
+      <div class="message achilles">
+        Hi. I'm Achilles. Ask me about coffee — origins, flavor notes, processes, roast levels. I remember what you like.
+        <div class="message-meta">confidence: high · data: mock</div>
+      </div>
+    </div>
+
+    <div class="status-bar" id="statusBar">
+      <span class="mock">●</span> Running on mock data (CoffeeDB.pro unavailable)
+    </div>
+
+    <div class="chat-input-row">
+      <input type="text" id="userInput" placeholder="e.g. 'Ethiopian natural with berry notes'" autocomplete="off">
+      <button id="sendBtn" onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script>
+    const API_BASE = 'http://localhost:8000';
+    const messages = document.getElementById('chatMessages');
+    const input = document.getElementById('userInput');
+    const btn = document.getElementById('sendBtn');
+    const statusBar = document.getElementById('statusBar');
+    let userId = 'user_' + Math.random().toString(36).slice(2, 8);
+
+    // Check API health on load
+    fetch(`${API_BASE}/health`, { method: 'GET' })
+      .then(r => r.json())
+      .then(data => {
+        const indicator = data.data_source === 'live' ? 'live' : 'mock';
+        const label = data.data_source === 'live' ? 'Live CoffeeDB.pro data' : 'Mock data (CoffeeDB.pro unavailable)';
+        const color = data.data_source === 'live' ? '#4caf50' : 'var(--copper)';
+        statusBar.innerHTML = `<span style="color:${color}">●</span> ${label}`;
+      })
+      .catch(() => {
+        statusBar.innerHTML = '<span style="color:#e74c3c">●</span> API unreachable — start the server: <code>python achilles_api.py</code>';
+      });
+
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') sendMessage();
+    });
+
+    function appendMessage(text, sender, meta) {
+      const div = document.createElement('div');
+      div.className = `message ${sender}`;
+      div.innerHTML = text + (meta ? `<div class="message-meta">${meta}</div>` : '');
+      messages.appendChild(div);
+      messages.scrollTop = messages.scrollHeight;
+    }
+
+    async function sendMessage() {
+      const text = input.value.trim();
+      if (!text) return;
+
+      appendMessage(text, 'user');
+      input.value = '';
+      btn.disabled = true;
+
+      try {
+        const res = await fetch(`${API_BASE}/api/chat`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ message: text, user_id: userId })
+        });
+
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const data = await res.json();
+
+        const meta = `confidence: ${data.confidence} · sources: ${data.sources.length} · memory: ${data.memory_used ? 'yes' : 'no'} · data: ${data.data_source}`;
+        appendMessage(data.reply.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>'), 'achilles', meta);
+      } catch (err) {
+        appendMessage(
+          'Something went wrong. Make sure the API server is running: <code>python achilles_api.py</code>',
+          'achilles',
+          'error: ' + err.message
+        );
+      } finally {
+        btn.disabled = false;
+        input.focus();
+      }
+    }
+  </script>
+</body>
+</html>
