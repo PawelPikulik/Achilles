@@ -29,10 +29,13 @@ This repo is the proof. Every file earns its place.
 | **Week 04 — Empty but Live** | [`empty-but-live.md`](empty-but-live.md) | GitHub Pages blank page status, 404 + live screenshots, activation steps, phone verification, and content map readiness. |
 | **Week 04 — Agent Concepts & MCP** | [`agent-concepts-mcp.md`](agent-concepts-mcp.md) | Workflow vs agent distinction, FL-04 classification, MCP three primitives, working filesystem MCP server with evidence of three tool calls. |
 | **Week 04 — Automation Workflow v2** | [`automation-workflow-v2.md`](automation-workflow-v2.md) | 4-step no-code pipeline (Draft → Critique → Revise → Format) run on 5 real deliverables. Claude Project instructions, time accounting, honest failure points. |
-| **Week 05 — Explain It Like You Built It** | [`explain-it-like-you-built-it.md`](explain-it-like-you-built-it.md) | Plain-words explanation of CSS Custom Properties (`:root` block) as the settings panel for the entire portfolio design system. Real code from `styles.css`, honest learning moment. |
-| **Week 05 — Design Your Personal Agent** | [`personal-agent-spec.md`](personal-agent-spec.md) | The Build Steward: read-only weekly repo auditor spec. Job, frequency, tools, draft instructions, 5 eval cases, guardrails, platform choice with rejected alternatives. |
+| **Week 05 — Explain It Like You Built It (Achilles)** | [`explain-it-like-you-built-it-achilles.md`](explain-it-like-you-built-it-achilles.md) | Plain-words explanation of Achilles' preference memory system: regex extraction, JSON persistence, score boosting, and matching engine — as if explaining to a friend. |
+| **Week 05 — Design Your Personal Agent (Achilles)** | [`personal-agent-spec-achilles.md`](personal-agent-spec-achilles.md) | Achilles as a personal coffee research/recommendation assistant. Job, user, frequency, tools, draft instructions, 5 eval cases, guardrails, platform choice with rejected alternatives. |
+| **Week 05 — Build the Agent (Achilles MVP)** | [`build-log-achilles.md`](build-log-achilles.md) + [`achilles_api.py`](achilles_api.py) + [`achilles_chat.html`](achilles_chat.html) + [`achilles_notes.md`](achilles_notes.md) + [`test_achilles.py`](test_achilles.py) | Working coffee recommendation agent: FastAPI backend with mock CoffeeDB data, rule-based matching engine, preference memory (regex + JSON), CORS-enabled browser chat UI. 10/10 tests pass. Build log with 6 bugs fixed. |
+| **Week 05 — Explain It Like You Built It (Build Steward)** | [`explain-it-like-you-built-it.md`](explain-it-like-you-built-it.md) | Plain-words explanation of CSS Custom Properties (`:root` block) as the settings panel for the entire portfolio design system. Real code from `styles.css`, honest learning moment. |
+| **Week 05 — Design Your Personal Agent (Build Steward)** | [`personal-agent-spec.md`](personal-agent-spec.md) | The Build Steward: read-only weekly repo auditor spec. Job, frequency, tools, draft instructions, 5 eval cases, guardrails, platform choice with rejected alternatives. |
 | **Week 05 — Build Steward Prompt & Evals** | [`build-steward-prompt-and-evals.md`](build-steward-prompt-and-evals.md) | Refined system prompt (5-step workflow + on-demand trigger) and 5 evaluation cases with setup/expected/pass criteria. Ready to paste into a Claude Project. |
-| **Week 05 — Build the Agent (FL-07)** | [`build_steward_agent.py`](build_steward_agent.py) + [`build-log-fl07.md`](build-log-fl07.md) + [`build-steward-run.txt`](build-steward-run.txt) | Working Build Steward: Python script connecting to MCP filesystem server, 5-step workflow end to end, build log with 5 bugs fixed, unedited run capture. |
+| **Week 05 — Build the Agent (Build Steward)** | [`build_steward_agent.py`](build_steward_agent.py) + [`build-log-fl07.md`](build-log-fl07.md) + [`build-steward-run.txt`](build-steward-run.txt) | Working Build Steward: Python script connecting to MCP filesystem server, 5-step workflow end to end, build log with 5 bugs fixed, unedited run capture. |
 | **Achilles MVP** | [`achilles_api.py`](achilles_api.py) + [`achilles_chat.html`](achilles_chat.html) + [`achilles_notes.md`](achilles_notes.md) + [`test_achilles.py`](test_achilles.py) | FastAPI backend with mock CoffeeDB schema data, rule-based matching, preference memory, browser chat UI. 10/10 tests pass. CoffeeDB.pro gap documented honestly. |
 
 ---
@@ -75,9 +78,12 @@ Everything links back to the claim: *domain-specific AI products from API to UI.
 | Empty but Live (GitHub Pages status, screenshot, content ready) | ✅ Final — enabled and verified live on phone |
 | Automation workflow v2 (4-step pipeline, 5 runs, time accounting) | ✅ Final |
 | Explain It Like You Built It (CSS custom properties, real piece, own words) | ✅ Final |
+| Explain It Like You Built It — Achilles preference memory (regex, JSON, scoring engine) | ✅ Final |
 | Design Your Personal Agent — Build Steward spec (job, evals, guardrails, platform) | ✅ Final |
+| Design Your Personal Agent — Achilles coffee assistant spec (job, evals, guardrails, platform) | ✅ Final |
 | Build Steward system prompt & evaluation cases (ready to paste into Claude Project) | ✅ Final |
 | Build the Agent — working Build Steward script, build log, unedited run capture | ✅ Final |
+| Build the Agent — Achilles MVP build log (6 bugs, 10/10 tests, CORS, memory race) | ✅ Final |
 | Image set (8 keepers, style spec, rejection note) | ⚠️ Documented; screenshots and AI images to be captured/generated |
 | Live portfolio site (Hero, Work, Credibility Strip, Contact) | ⚠️ Built (`index.html` + `styles.css`); real screenshots/images pending |
 | Achilles API integration (live CoffeeDB.pro connection) | ⚠️ MVP built with mock data; CoffeeDB.pro unreachable — gap documented in `achilles_notes.md` |

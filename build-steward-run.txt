@@ -1,7 +1,7 @@
 # Build Steward — Weekly Review Report
 
-*Generated: 2026-09-10 16:15 UTC*
-*Runtime: 1.0s*
+*Generated: 2026-09-10 16:22 UTC*
+*Runtime: 1.7s*
 
 ---
 
@@ -26,6 +26,7 @@
 | Explain It Like You Built It (CSS custom properties, real piece, own words) | ✅ Final |
 | Design Your Personal Agent — Build Steward spec (job, evals, guardrails, platform) | ✅ Final |
 | Build Steward system prompt & evaluation cases (ready to paste into Claude Project) | ✅ Final |
+| Build the Agent — working Build Steward script, build log, unedited run capture | ✅ Final |
 | Image set (8 keepers, style spec, rejection note) | ⚠️ Documented; screenshots and AI images to be captured/generated |
 | Live portfolio site (Hero, Work, Credibility Strip, Contact) | ⚠️ Built (`index.html` + `styles.css`); real screenshots/images pending |
 | Achilles API integration (live CoffeeDB.pro connection) | ⏳ Not yet built |
@@ -69,6 +70,23 @@
 - **course-internal** (line 237): `FL-03`
 - **course-internal** (line 237): `assignment`
 - **course-internal** (line 247): `assignment`
+
+### build-log-fl07.md
+- **placeholder** (line 147): `[relevant background — add if you have it]`
+- **course-internal** (line 1): `FL-07`
+- **course-internal** (line 5): `FL-04`
+- **course-internal** (line 11): `FL-06`
+- **course-internal** (line 13): `FL-06`
+- **course-internal** (line 13): `FL-07`
+- **course-internal** (line 13): `assignment`
+- **course-internal** (line 49): `Week 01`
+- **course-internal** (line 49): `deliverable`
+- **course-internal** (line 51): `assignment`
+- **course-internal** (line 51): `deliverable`
+- **course-internal** (line 53): `deliverable`
+- **course-internal** (line 107): `FL-06`
+- **course-internal** (line 125): `FL-04`
+- **course-internal** (line 148): `FL-03`
 
 ### build-steward-prompt-and-evals.md
 - **placeholder** (line 135): `[relevant background — add if you have it]`
@@ -133,9 +151,9 @@
 - **prompt-ladder-apicode.md** — Passes. No flags.
 ### README.md
 - **placeholder** (line 23): `[`prompt-ladder-apicode.md`]`
-- **course-internal** (line 48): `Week 01`
-- **course-internal** (line 49): `Week 02`
-- **course-internal** (line 50): `Week 03`
+- **course-internal** (line 49): `Week 01`
+- **course-internal** (line 50): `Week 02`
+- **course-internal** (line 51): `Week 03`
 
 - **sitemap.md** — Passes. No flags.
 ### target-tasks.md
@@ -199,6 +217,10 @@
   > `- Generic language that could apply to any portfolio ("I build AI-powered solutions")`
 - **ACTION** (line 71): Vague CTA ('get in touch') — does not bridge to a concrete next step.
   > `- CTAs that are vague or missing ("get in touch" instead of "Let's turn your API into a product")`
+
+### build-log-fl07.md
+- **AUDIENCE** (line 85): States builder skill ('skilled developer') instead of naming the Head of AI's problem.
+  > `**Symptom:** `build-steward-prompt-and-evals.md` was flagged for "skilled developer" in Eval 4's setup instructions. Tha`
 
 ### build-steward-prompt-and-evals.md
 - **CLAIM** (line 47): Contains generic buzzword 'leverage' — does not support the specific claim.
@@ -281,25 +303,23 @@
 
 ## 4. Repo Hygiene
 
-- **Uncommitted files:** 2
-  - `?? build-steward-run.txt`
-  - `?? build_steward_agent.py`
-- **Last commit:** 2026-09-09
+- **Uncommitted files:** None. Working tree clean.
+- **Last commit:** 2026-09-10
 - **Recent commits:**
+  - `ad479e9 FL-07: Build the Agent — The Build Steward (2026-09-10 18:17:33 +0200)`
   - `0548d7c Week 5: Build Steward system prompt and evaluation cases (2026-09-09 14:43:28 +0200)`
   - `b3ef87c FL-06: Design Your Personal Agent — The Build Steward (2026-09-09 14:32:52 +0200)`
   - `07456fe Week 5: Explain It Like You Built It (2026-09-01 16:46:32 +0200)`
   - `299269f FL-04: Ship an Automation Workflow v2 (2026-08-28 15:24:31 +0200)`
-  - `fcf69ea Week 4: Empty but Live — add live screenshot, mark final (2026-08-26 00:11:52 +0200)`
-- **Repo freshness:** 1 days since last commit.
+- **Repo freshness:** 0 days since last commit.
 
 ---
 
 ## 5. Priority Order for This Weekend
 
-1. Commit uncommitted deliverables before they drift.
-2. Fix 15 flagged file issue(s) (placeholders, missing assets, course-internal language).
-3. Review pressure-test flags — at least one file has weak claim/audience/action language.
+1. Fix 16 flagged file issue(s) (placeholders, missing assets, course-internal language).
+2. Review pressure-test flags — at least one file has weak claim/audience/action language.
+3. Check the ⏳ items in the status table — move one to ⚠️ or ✅.
 
 ---
 
