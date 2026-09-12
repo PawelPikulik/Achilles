@@ -2,7 +2,7 @@
 
 One-page personal website: who I am, what I build, links to LinkedIn, GitHub, portfolio, and email.
 
-**Live URL:** [pawelpikulik.netlify.app](https://pawelpikulik.netlify.app) *(rename after first deploy)*
+**Live URL:** [pawelpikulik.netlify.app](https://pawelpikulik.netlify.app) ✅ Deployed
 
 ## Deploy to Netlify
 
@@ -44,9 +44,9 @@ One-page personal website: who I am, what I build, links to LinkedIn, GitHub, po
 
 ## Post-deployment checklist
 
-- [ ] Site loads over HTTPS with padlock
+- [x] Site loads over HTTPS with padlock
+- [x] Rename URL from random slug to `pawelpikulik`
 - [ ] Test in private/incognito window
 - [ ] Test on phone
 - [ ] LinkedIn profile links to this site
 - [ ] CV links to this site
-- [ ] Rename URL from random slug to `pawelpikulik`
