@@ -292,6 +292,96 @@ footer p {
 }
 
 /* ==========================================================================
+   CONTACT FORM
+   ========================================================================== */
+
+.contact h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+  color: var(--cream);
+}
+
+.contact-intro {
+  color: var(--muted);
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+#contact-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--amber);
+  margin-bottom: 0.35rem;
+  font-family: var(--font-heading);
+}
+
+.form-row input,
+.form-row textarea {
+  background: var(--espresso);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.75rem 1rem;
+  color: var(--cream);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+  outline: none;
+  border-color: var(--copper);
+  box-shadow: 0 0 0 2px rgba(193, 127, 62, 0.15);
+}
+
+.form-row input::placeholder,
+.form-row textarea::placeholder {
+  color: var(--muted);
+  opacity: 0.6;
+}
+
+.form-row textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+#contact-form button {
+  justify-self: start;
+  border: none;
+  cursor: pointer;
+}
+
+.form-status {
+  margin: 0;
+  font-size: 0.9rem;
+  min-height: 1.5rem;
+}
+
+.form-status.sending {
+  color: var(--muted);
+}
+
+.form-status.success {
+  color: #7cb87c;
+}
+
+.form-status.error {
+  color: #c96b6b;
+}
+
+/* ==========================================================================
    RESPONSIVE
    ========================================================================== */
 
@@ -308,5 +398,10 @@ footer p {
   .hero {
     min-height: auto;
     padding: 3rem 1.25rem;
+  }
+
+  #contact-form button {
+    justify-self: stretch;
+    width: 100%;
   }
 }
