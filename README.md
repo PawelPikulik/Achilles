@@ -30,10 +30,11 @@ One-page personal website: who I am, what I build, links to LinkedIn, GitHub, po
 
 | File | Purpose |
 |------|---------|
-| `index.html` | The page: hero, featured project (Achilles), links, future posts space |
+| `index.html` | The page: hero, featured project (Achilles), links, future posts space, **working contact form** |
 | `styles.css` | Dark Roast Precision design system (Space Grotesk + Inter) |
 | `netlify.toml` | Security headers, publish config |
 | `dns-walkthrough.md` | DNS explanation for PF-04 deliverable |
+| `backend-explainer.md` | Plain-words explainer: what a backend is, how the contact form data flows, why Formspree (Week 6) |
 
 ## Links to update before going live
 
@@ -42,10 +43,21 @@ One-page personal website: who I am, what I build, links to LinkedIn, GitHub, po
 - `index.html` line 58: Portfolio/CV link
 - `index.html` line 62: Booking/email link
 
+## Features
+
+- **Working contact form** (Week 6 — "Make It Do Something")
+  - Posts asynchronously via JavaScript to Formspree (`https://formspree.io/f/mgvalvjr`)
+  - No page reload; instant success/error feedback
+  - Submissions forwarded to `pawel.pikulik@velans.com`
+  - Free tier (50 submissions/month)
+  - See [`backend-explainer.md`](backend-explainer.md) for full data-flow explanation
+
 ## Post-deployment checklist
 
 - [x] Site loads over HTTPS with padlock
 - [x] Rename URL from random slug to `pawelpikulik`
+- [x] Contact form present and styled
+- [ ] Test contact form submission reaches inbox
 - [ ] Test in private/incognito window
 - [ ] Test on phone
 - [ ] LinkedIn profile links to this site
