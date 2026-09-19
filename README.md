@@ -46,19 +46,37 @@ One-page personal website: who I am, what I build, links to LinkedIn, GitHub, po
 ## Features
 
 - **Working contact form** (Week 6 — "Make It Do Something")
-  - Posts asynchronously via JavaScript to Formspree (`https://formspree.io/f/mgvalvjr`)
-  - No page reload; instant success/error feedback
+  - Netlify Forms (no external dependencies, 100 submissions/month free)
+  - Works with or without JavaScript (graceful degradation)
+  - Disabled-button protection against double-submit
+  - Input length limits (`maxlength`), autocomplete hints
   - Submissions forwarded to `pawel.pikulik@velans.com`
-  - Free tier (50 submissions/month)
   - See [`backend-explainer.md`](backend-explainer.md) for full data-flow explanation
+
+- **SEO / Meta** (Week 7 — "Break Your Own Site")
+  - Open Graph tags, Twitter Card, canonical URL, inline SVG favicon
+  - Page title and description optimized for search
+
+- **Accessibility**
+  - `focus-visible` outlines on all interactive elements
+  - Semantic HTML (`<header>`, `<main>`, `<section>`, `<footer>`)
+  - Mobile-first responsive layout (no horizontal scroll)
 
 ## Post-deployment checklist
 
 - [x] Site loads over HTTPS with padlock
 - [x] Rename URL from random slug to `pawelpikulik`
 - [x] Contact form present and styled
-- [ ] Test contact form submission reaches inbox
-- [ ] Test in private/incognito window
-- [ ] Test on phone
+- [x] Test contact form submission reaches inbox
+- [x] Test in private/incognito window
+- [x] Test on phone (Chrome DevTools iPhone SE)
+- [x] Double-submit race condition fixed
+- [x] No-JavaScript fallback works
+- [x] SEO meta added
 - [ ] LinkedIn profile links to this site
 - [ ] CV links to this site
+- [ ] Submit to Google Search Console
+
+## Hardening report
+
+See [`HARDCENING.md`](HARDCENING.md) for the full "Break Your Own Site" findings: what was tested, what broke, what was fixed, and what is an honest known limitation.

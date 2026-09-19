@@ -3,8 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pawel Pikulik — Domain-Specific AI Products</title>
-  <meta name="description" content="I ship domain-specific AI products from API to UI. Currently building Achilles, the AI Coffee Expert.">
+  <title>Pawel Pikulik — AI Product Builder (API to UI)</title>
+  <meta name="description" content="I ship domain-specific AI products from API to UI. Currently building Achilles, the AI Coffee Expert. Full-stack backend engineer.">
+  <link rel="canonical" href="https://pawelpikulik.netlify.app/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E☕%3C/text%3E%3C/svg%3E">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Pawel Pikulik — AI Product Builder">
+  <meta property="og:description" content="Domain-specific AI products from API to UI. Achilles, the AI Coffee Expert.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pawelpikulik.netlify.app/">
+  <meta property="og:site_name" content="Pawel Pikulik">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Pawel Pikulik — AI Product Builder">
+  <meta name="twitter:description" content="Domain-specific AI products from API to UI. Achilles, the AI Coffee Expert.">
+
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,7 +30,7 @@
       <p class="eyebrow">AI Product Builder · Full Stack · API to UI</p>
       <h1>Pawel Pikulik</h1>
       <p class="tagline">I turn raw domain APIs into conversational products people actually use.</p>
-      <p class="status">Currently: <a href="https://github.com/PawelPikulik/Achilles">Achilles</a> — an AI Coffee Expert built end to end from data integration to browser chat.</p>
+      <p class="status">Currently: <a href="https://github.com/PawelPikulik/Achilles" target="_blank" rel="noopener noreferrer">Achilles</a> — an AI Coffee Expert built end to end from data integration to browser chat.</p>
       <div class="cta-row">
         <a href="https://github.com/PawelPikulik/Achilles" class="cta-primary">View the work</a>
         <a href="mailto:pawel.pikulik@velans.com" class="cta-secondary">Email me</a>
@@ -38,8 +53,8 @@
       </ul>
 
       <div class="project-links">
-        <a href="https://github.com/PawelPikulik/Achilles">GitHub repo →</a>
-        <a href="https://pawelpikulik.github.io/Achilles/">Portfolio site (GitHub Pages) →</a>
+        <a href="https://github.com/PawelPikulik/Achilles" target="_blank" rel="noopener noreferrer">GitHub repo →</a>
+        <a href="https://pawelpikulik.github.io/Achilles/" target="_blank" rel="noopener noreferrer">Portfolio site (GitHub Pages) →</a>
       </div>
     </section>
 
@@ -47,15 +62,15 @@
     <section class="links" id="links">
       <p class="section-label">Find me</p>
       <div class="link-grid">
-        <a href="https://linkedin.com/in/pawelpikulik" class="link-card">
+        <a href="https://linkedin.com/in/pawelpikulik" class="link-card" target="_blank" rel="noopener noreferrer">
           <strong>LinkedIn</strong>
           <span>Professional profile & experience</span>
         </a>
-        <a href="https://github.com/PawelPikulik" class="link-card">
+        <a href="https://github.com/PawelPikulik" class="link-card" target="_blank" rel="noopener noreferrer">
           <strong>GitHub</strong>
           <span>All repositories & open source work</span>
         </a>
-        <a href="https://pawelpikulik.github.io/Achilles/" class="link-card">
+        <a href="https://pawelpikulik.github.io/Achilles/" class="link-card" target="_blank" rel="noopener noreferrer">
           <strong>Portfolio / CV</strong>
           <span>Full case study, build log, and deliverables</span>
         </a>
@@ -72,20 +87,20 @@
       <h2>Send a message</h2>
       <p class="contact-intro">Have a project, question, or opportunity? Drop a note and I will get back to you.</p>
 
-      <form id="contact-form" action="https://formspree.io/f/mgvalvjr" method="POST">
+      <form id="contact-form" name="contact" netlify method="POST" action="/success.html" data-netlify="true">
         <div class="form-row">
           <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name" required>
+          <input type="text" id="name" name="name" placeholder="Your name" required maxlength="100" autocomplete="name">
         </div>
         <div class="form-row">
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required maxlength="254" autocomplete="email">
         </div>
         <div class="form-row">
           <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="What is on your mind?" required></textarea>
+          <textarea id="message" name="message" rows="5" placeholder="What is on your mind?" required maxlength="2000" autocomplete="off"></textarea>
         </div>
-        <button type="submit" class="cta-primary">Send message</button>
+        <button type="submit" class="cta-primary" id="submit-btn">Send message</button>
         <p id="form-status" class="form-status" aria-live="polite"></p>
       </form>
     </section>
@@ -103,36 +118,45 @@
     <p class="badge-note">FlyRank General AI Fluency — <em>Completion badge pending capstone approval</em></p>
   </footer>
 
-<script>
-  const form = document.getElementById('contact-form');
-  const status = document.getElementById('form-status');
+  <script>
+  (function() {
+    const form = document.getElementById('contact-form');
+    const status = document.getElementById('form-status');
+    const btn = document.getElementById('submit-btn');
 
-  form.addEventListener('submit', async function(event) {
-    event.preventDefault();
-    status.textContent = 'Sending...';
-    status.className = 'form-status sending';
+    form.addEventListener('submit', async function(event) {
+      event.preventDefault();
+      if (btn.disabled) return;
 
-    const data = new FormData(form);
-    try {
-      const response = await fetch(form.action, {
-        method: 'POST',
-        body: data,
-        headers: { Accept: 'application/json' }
-      });
-      if (response.ok) {
-        status.textContent = 'Message sent. I will be in touch shortly.';
-        status.className = 'form-status success';
-        form.reset();
-      } else {
-        const result = await response.json();
-        status.textContent = result.error || 'Something went wrong. Please try again.';
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+      status.textContent = 'Sending...';
+      status.className = 'form-status sending';
+
+      const data = new FormData(form);
+      try {
+        const response = await fetch('/', {
+          method: 'POST',
+          body: data,
+          headers: { Accept: 'application/json' }
+        });
+        if (response.ok || response.redirected) {
+          status.textContent = 'Message sent. I will be in touch shortly.';
+          status.className = 'form-status success';
+          form.reset();
+        } else {
+          status.textContent = 'Something went wrong. Please try again.';
+          status.className = 'form-status error';
+        }
+      } catch (err) {
+        status.textContent = 'Network error. Please try again.';
         status.className = 'form-status error';
+      } finally {
+        btn.disabled = false;
+        btn.textContent = 'Send message';
       }
-    } catch (err) {
-      status.textContent = 'Network error. Please try again.';
-      status.className = 'form-status error';
-    }
-  });
+    });
+  })();
 </script>
 </body>
 </html>
