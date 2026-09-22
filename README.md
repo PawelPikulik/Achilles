@@ -77,6 +77,13 @@ One-page personal website: who I am, what I build, links to LinkedIn, GitHub, po
 - [ ] CV links to this site
 - [ ] Submit to Google Search Console
 
+## Domain + Badge + Analytics (Week 7 — "Plant Your Flag")
+
+- **Domain:** https://pawelpikulik.netlify.app (free Netlify subdomain, HTTPS enforced)
+- **Analytics:** Google Analytics 4 installed (replace `G-XXXXXXXXXX` in `index.html` with your real Measurement ID)
+- **SEO:** Open Graph, Twitter Card, canonical URL, favicon — verified on live site
+- **FlyRank badge:** Placeholder in footer; replace `YOUR_CREDENTIAL_REF` and `YOUR_FIRST_NAME` when credential is issued
+
 ## Hardening report
 
 See [`HARDCENING.md`](HARDCENING.md) for the full "Break Your Own Site" findings: what was tested, what broke, what was fixed, and what is an honest known limitation.

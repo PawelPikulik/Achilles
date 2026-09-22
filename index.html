@@ -20,6 +20,16 @@
   <meta name="twitter:title" content="Pawel Pikulik — AI Product Builder">
   <meta name="twitter:description" content="Domain-specific AI products from API to UI. Achilles, the AI Coffee Expert.">
 
+  <!-- Google Analytics 4 — free tier, no credit card required
+       Replace G-XXXXXXXXXX with your real Measurement ID from https://analytics.google.com -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -115,7 +125,12 @@
   <!-- ========================= FOOTER ========================= -->
   <footer>
     <p>Built with hand-written HTML & CSS. Hosted on Netlify. <a href="https://github.com/PawelPikulik/personal-site">View source</a>.</p>
-    <p class="badge-note">FlyRank General AI Fluency — <em>Completion badge pending capstone approval</em></p>
+    <p class="badge-note">
+      FlyRank General AI Fluency —
+      <!-- Replace YOUR_CREDENTIAL_REF and YOUR_FIRST_NAME with real values from FlyRank dashboard,
+           then visit https://internship-badge.netlify.app/ to generate the SVG badge code. -->
+      <a href="https://internship.flyrank.ai/verify?id=YOUR_CREDENTIAL_REF&name=YOUR_FIRST_NAME" target="_blank" rel="noopener noreferrer">Verify credential</a>
+    </p>
   </footer>
 
   <script>
