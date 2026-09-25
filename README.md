@@ -1,83 +1,199 @@
-﻿# FlyRank Portfolio: Achilles AI Coffee Expert
+# Achilles — AI Coffee Expert
 
-**One claim:** I can ship domain-specific AI products from API to UI.
-**One person:** A Head of AI who needs to turn a raw domain API into a live, conversational product.
-**One action:** Reach out to me to build their domain-specific AI product.
+A domain-specific AI product that answers coffee questions using structured bean data, remembers your taste preferences across sessions, and recommends beans that match both your query and your stated tastes.
 
-This repo is the proof. Every file earns its place.
-
----
-
-## Deliverables by Week
-
-| Week | File | What It Is |
-|------|------|------------|
-| **Week 01 — Proof Statement** | [`achilles-proof-statement.md`](achilles-proof-statement.md) | The one-paragraph claim + person + action, plus the one-line why. |
-| **Week 01 — Sitemap** | [`sitemap.md`](sitemap.md) | 4-page portfolio sketch (Hero, Work, About strip, Contact), revised after pressure-test. |
-| **Week 01 — Claude Project Setup** | [`claude-project-setup.md`](claude-project-setup.md) | Custom instructions for the Achilles Claude Project: who I am, tone, goals, role definition. |
-| **Week 01 — Workflow Audit** | [`workflow-audit.md`](workflow-audit.md) | 15 real tasks classified by AI interaction type (Just Me / Delegate / Collaborate / Automate). |
-| **Week 01 — Target Tasks** | [`target-tasks.md`](target-tasks.md) | 3 tasks for FL-02–04 with measurable success definitions. |
-| **Week 01 — Pressure Test Prompt** | [`pressure-test-prompt.md`](pressure-test-prompt.md) | The exact prompt run in the Claude Project to validate the sitemap. *(Working doc)* |
-| **Week 01 — Pressure Test Output** | [`pressure-test-output.md`](pressure-test-output.md) | Full Claude response: brutal page-by-page critique + the ONE thing to change. |
-| **Week 02 — Prompt Engineering Log** | [`prompt-engineering-log.md`](prompt-engineering-log.md) | 6-version prompt iteration for Achilles (naive → role → context → few-shot → structure → decomposition). Cross-model comparison: Claude vs. ChatGPT. Reusable template. |
-| **Week 02 — Prompt Ladder (API Code)** | [`prompt-ladder-apicode.md`](prompt-ladder-apicode.md) | 6-run prompt ladder for CoffeeDB API integration code. Baseline + 5 versions, each with one named layer, output comparison, honest notes including one version that made output worse. Final reusable prompt. |
-| **Week 02 — Case Study** | [`case-study-achilles.md`](case-study-achilles.md) | Framed case study with 3 beats (problem, what I did, what came of it), voice card, bio copy, CTA copy, 3 before/after examples, editing checklist. |
-| **Week 03 — Curated Image Set** | [`curated-image-set.md`](curated-image-set.md) | 8-image keeper set mapped to sitemap, style spec for AI-generated images, rejection note with specific judgment, real vs. AI decisions. |
-| **Week 03 — Asset Guide** | [`assets/screenshot-and-prompt-guide.md`](assets/screenshot-and-prompt-guide.md) | Screenshot checklist for 5 real captures + tool-specific AI image prompts (DALL-E, Midjourney, Stable Diffusion) with negative prompts and rejection criteria. |
-| **Week 03 — Identity Kit** | [identity-kit.md](identity-kit.md) | Fonts (Space Grotesk + Inter), 4-color palette with hex codes, favicon.svg monogram, two-line style note added to Claude Project. |
-| **Week 04 — Three Roads (Stack Choice)** | [three-roads.md](three-roads.md) | Three genuine stack options with trade-offs, pressure-test, and honest decision: static HTML on GitHub Pages. |
-| **Week 04 — Empty but Live** | [`empty-but-live.md`](empty-but-live.md) | GitHub Pages blank page status, 404 + live screenshots, activation steps, phone verification, and content map readiness. |
-| **Week 04 — Agent Concepts & MCP** | [`agent-concepts-mcp.md`](agent-concepts-mcp.md) | Workflow vs agent distinction, FL-04 classification, MCP three primitives, working filesystem MCP server with evidence of three tool calls. |
-| **Week 04 — Automation Workflow v2** | [`automation-workflow-v2.md`](automation-workflow-v2.md) | 4-step no-code pipeline (Draft → Critique → Revise → Format) run on 5 real deliverables. Claude Project instructions, time accounting, honest failure points. |
-| **Week 05 — Explain It Like You Built It** | [`explain-it-like-you-built-it-achilles.md`](explain-it-like-you-built-it-achilles.md) | Plain-words explanation of Achilles' preference memory system: regex extraction, JSON persistence, score boosting, and matching engine — as if explaining to a friend. |
-| **Week 05 — Design Your Personal Agent** | [`personal-agent-spec-achilles.md`](personal-agent-spec-achilles.md) | Achilles as a personal coffee research/recommendation assistant. Job, user, frequency, tools, draft instructions, 5 eval cases, guardrails, platform choice with rejected alternatives. |
-| **Week 05 — Build the Agent** | [`build-log-achilles.md`](build-log-achilles.md) + [`achilles_api.py`](achilles_api.py) + [`achilles_chat.html`](achilles_chat.html) + [`achilles_notes.md`](achilles_notes.md) + [`test_achilles.py`](test_achilles.py) | Working coffee recommendation agent: FastAPI backend with mock CoffeeDB data, rule-based matching engine, preference memory (regex + JSON), CORS-enabled browser chat UI. 10/10 tests pass. Build log with 6 bugs fixed. |
+**Built by:** Pawel Pikulik (with AI as a build partner — see [AI Transparency](#ai-transparency))  
+**Track:** FlyRank General AI Fluency (FL-01 through FL-08)  
+**Live portfolio:** https://pawelpikulik.netlify.app  
+**Backend repo:** https://github.com/PawelPikulik/Artificiall  
+**Deliverables index:** [DELIVERABLES.md](DELIVERABLES.md) | [RETROSPECTIVE.md](RETROSPECTIVE.md)
 
 ---
 
-## How to Read This Repo
+## What it does (and for whom)
 
-Start with the **proof statement** — it defines the lens. Then the **sitemap** — it defines the structure. Then the **case study** — it contains the voice, the copy, and the before/after editing. The **prompt engineering** and **prompt ladder** files prove the technical and iterative discipline. The **image set** documents the visual curation strategy.
+Achilles is a conversational coffee recommendation system. A user asks a question like *"What Ethiopian coffee has berry notes?"* and Achilles:
 
-Everything links back to the claim: *domain-specific AI products from API to UI.*
+1. Parses the query for keywords (origin, flavor notes, process, roast level)
+2. Checks the user's stored preferences (e.g. *"I prefer natural processed coffees"*)
+3. Scores every bean in the database against the query + preferences
+4. Returns the top match with a confidence level and structured source data
 
----
-
-## Key Links
-
-- Week 01 Brief: https://aifluency.flyrank.ai/week-01.html#what-are-you-proving
-- Week 02 Brief: https://aifluency.flyrank.ai/week-02.html#frame-it-as-cases
-- Week 03 Brief: https://aifluency.flyrank.ai/week-03.html#curate-your-images
-- Data Source: https://www.coffeedb.pro/api
-- Anthropic Prompt Engineering Tutorial: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering
-- Ethan Mollick — On-boarding your AI Intern: https://www.oneusefulthing.org/p/on-boarding-your-ai-intern
+**Who it's for:** A Head of AI or Product who needs to see that I can turn a raw domain API into a live, conversational product — from structured data to browser chat.
 
 ---
 
-## Repo Status
+## Quick start
 
-| Item | Status |
-|------|--------|
-| Proof statement (claim + person + action) | ✅ Final |
-| Sitemap (4 pages, post pressure-test) | ✅ Final |
-| Claude Project configured | ✅ Instructions documented |
-| Workflow audit (15 tasks, 4 classifications) | ✅ Final |
-| Target tasks (3 tasks, measurable definitions) | ✅ Final |
-| Pressure-test run + output saved | ✅ Final |
-| Prompt engineering log (6 versions, cross-model comparison) | ✅ Final |
-| Prompt ladder (baseline + 5 versions, honest notes) | ✅ Final |
-| Case study (3 beats, voice card, before/after) | ✅ Final |
-| Identity kit (fonts, palette, favicon, style note) | ✅ Final |
-| Three Roads stack choice (options, pressure-test, rationale) | ✅ Final |
-| Agent concepts & MCP (workflow vs agent, MCP server, three tasks) | ✅ Final |
-| Empty but Live (GitHub Pages status, screenshot, content ready) | ✅ Final — enabled and verified live on phone |
-| Automation workflow v2 (4-step pipeline, 5 runs, time accounting) | ✅ Final |
-| Explain It Like You Built It — Achilles preference memory (regex, JSON, scoring engine) | ✅ Final |
-| Design Your Personal Agent — Achilles coffee assistant spec (job, evals, guardrails, platform) | ✅ Final |
-| Build the Agent — Achilles MVP build log (6 bugs, 10/10 tests, CORS, memory race) | ✅ Final |
-| Image set (8 keepers, style spec, rejection note) | ⚠️ Documented; screenshots and AI images to be captured/generated |
-| Live portfolio site (Hero, Work, Credibility Strip, Contact) | ⚠️ Built (`index.html` + `styles.css`); real screenshots/images pending |
-| Achilles API integration (live CoffeeDB.pro connection) | ⚠️ MVP built with mock data; CoffeeDB.pro unreachable — gap documented in `achilles_notes.md` |
-| Achilles conversation interface (prompts + memory) | ✅ MVP built — rule-based matching + preference memory + chat UI; 10/10 tests pass |
+```bash
+# 1. Clone and install
+git clone https://github.com/PawelPikulik/Achilles.git
+cd Achilles
+pip install -r requirements.txt
 
-*✅ = Documented and reviewed. ⚠️ = Documented but requires manual execution (screenshots, image generation). ⏳ = Pending future phases.*
+# 2. Start the API
+python achilles_api.py
+# Or: uvicorn achilles_api:app --host 0.0.0.0 --port 8000
+
+# 3. Open the chat UI
+open achilles_chat.html        # macOS
+start achilles_chat.html       # Windows
+# Or serve via: python -m http.server 8080
+
+# 4. Run tests (server must be running)
+python test_achilles.py
+```
+
+No API keys required for the MVP — it runs on mock data. To swap to live CoffeeDB.pro data, see [Swap path to production](#swap-path-to-production).
+
+---
+
+## Architecture
+
+```
+Browser (achilles_chat.html)
+    ↓  HTTP (CORS enabled)
+FastAPI (achilles_api.py)
+    ↓
+┌─────────────────────────────────────────┐
+│  Chat endpoint (/api/chat)              │
+│  ├── Query parser (regex keywords)      │
+│  ├── Preference memory (JSON file)      │
+│  ├── Matching engine (rule-based score) │
+│  └── Response formatter (structured)    │
+├─────────────────────────────────────────┤
+│  Memory endpoints (/api/memory)         │
+│  ├── GET  — retrieve user prefs        │
+│  └── POST — set a preference           │
+├─────────────────────────────────────────┤
+│  Data layer (fetch_coffee_data)        │
+│  └── MOCK_BEANS → CoffeeDB.pro (swap)  │
+└─────────────────────────────────────────┘
+```
+
+**Key design decisions:**
+- **Mock data for MVP:** CoffeeDB.pro was unreachable during build (DNS failure). Mock data uses the exact CoffeeDB schema so swapping to live data is a one-line change.
+- **Rule-based matching, not LLM:** The matching engine uses weighted keyword scores rather than an LLM. This is fast, deterministic, and debuggable — but it does not understand natural-language nuance. See [Limitations](#limitations).
+- **JSON file memory:** Preferences persist across server restarts via `achilles_memory.json`. Not suitable for concurrent users — see swap path.
+- **CORS `*` for dev:** The FastAPI middleware allows all origins so the HTML file can be opened directly. Production would restrict to the deployed domain.
+
+---
+
+## Usage examples
+
+### API (curl)
+
+```bash
+# Health check
+curl http://localhost:8000/health
+# → {"status":"ok","service":"achilles","data_source":"mock"}
+
+# Chat — origin + flavor query
+curl -X POST http://localhost:8000/api/chat \
+  -H "Content-Type: application/json" \
+  -d '{"message":"What Ethiopian coffee has berry notes?","user_id":"u1"}'
+# → {"reply":"Try Yirgacheffe G1 from Drop Coffee...","confidence":"high",
+#     "sources":[{"id":"b001","name":"Yirgacheffe G1","score":91}],
+#     "memory_used":false,"data_source":"mock"}
+
+# Store a preference
+curl -X POST http://localhost:8000/api/memory/u2 \
+  -H "Content-Type: application/json" \
+  -d '{"key":"preferred_process","value":"natural"}'
+
+# Recall memory
+curl http://localhost:8000/api/memory/u2
+# → {"preferences":{"preferred_process":"natural"},"history":[]}
+```
+
+### Browser chat
+
+Open `achilles_chat.html` in any browser. The UI:
+- Shows a status indicator (live vs. mock data)
+- Displays confidence level and source count for every reply
+- Remembers your `user_id` across page reloads
+- Handles empty input and API errors gracefully
+
+---
+
+## Eval results
+
+| Test | Query | Expected | Result |
+|------|-------|----------|--------|
+| 1 | "What Ethiopian coffee has berry notes?" | High confidence, Yirgacheffe | ✅ Pass |
+| 2 | "I prefer natural processed coffees" | Preference stored | ✅ Pass |
+| 3 | "What do you recommend from Ethiopia?" (same user) | Memory recalled | ✅ Pass |
+| 4 | "Something with chocolate and nutty flavors" | Brazil or Guatemala | ✅ Pass |
+| 5 | "Do you have any teas?" | Low confidence, no-match fallback | ✅ Pass |
+| 6 | "I want an anaerobic processed coffee" | Colombia Paraiso | ✅ Pass |
+| 7 | "I want a washed coffee from Kenya" | Kenya AA Nyeri | ✅ Pass |
+| 8 | "Recommend a dark roast" | Sumatra Mandheling | ✅ Pass |
+| 9 | "Any good Colombian beans?" | Colombia El Paraiso | ✅ Pass |
+| 10 | "Something fruity and light" | Sources returned | ✅ Pass |
+
+**Score: 10/10 tests pass.**
+
+Run: `python test_achilles.py` (server must be running on `localhost:8000`).
+
+---
+
+## Limitations (honest, not hidden)
+
+1. **Rule-based matching, not LLM.** The query engine uses simple regex keyword matching. It does not understand synonyms, negation, or brewing-method recommendations. A production version would use an LLM to interpret the query and call the API for structured data grounding.
+
+2. **Crude preference extraction.** Regex patterns (`i like X`, `i prefer X`) only catch simple statements. They don't handle compound preferences or temporal context.
+
+3. **Preference key mismatch.** The extraction saves keys like `flavor_like`, but the matching engine looks for `preferred_origin` and `preferred_process`. The boost doesn't always apply. Fixing this is a mapping exercise, not architectural.
+
+4. **No LLM for reply generation.** Replies are template strings. A real version would use an LLM to generate conversational, context-aware responses using structured data as grounding.
+
+5. **Single-user JSON memory.** `achilles_memory.json` works for local testing but is not suitable for concurrent users or production. Swap to SQLite/Redis.
+
+6. **Mock data only.** CoffeeDB.pro was unreachable during build. The mock data uses the exact CoffeeDB schema — swapping to live data is a one-line change documented in `achilles_notes.md`.
+
+7. **CORS allows all origins.** Configured for local development. Production would restrict to the deployed domain.
+
+---
+
+## Swap path to production
+
+| Component | Current | One-line change | Production |
+|-----------|---------|-----------------|------------|
+| Data source | `MOCK_BEANS` (8 items) | Replace `fetch_coffee_data()` with `requests.get("https://api.coffeedb.pro/v1/beans", headers={"Authorization": "Bearer TOKEN"})` | Live CoffeeDB data |
+| Auth | None | Add `COFFEEDB_API_KEY` env var | Bearer token auth |
+| Memory | `achilles_memory.json` | Swap `get_memory()` / `update_memory()` to SQLite or Redis calls | Persistent, multi-user |
+| CORS | `allow_origins=["*"]` | Change to `allow_origins=["https://pawelpikulik.netlify.app"]` | Secure origin restriction |
+| Reply generation | Template strings | Add LLM layer (Claude API / Groq) with structured output | Natural-language replies |
+
+---
+
+## AI Transparency
+
+**I built this with Claude (Anthropic) as my coding partner.**
+
+- **What AI did:** Generated the initial FastAPI scaffold, the regex-based matching engine, the CORS middleware config, the HTML chat UI structure, and the test suite template. Suggested the mock-data fallback when CoffeeDB.pro was unreachable.
+- **What I did myself:** Designed the scoring weights (calibrated by running evals), debugged the preference key mismatch (Bug 2 in `build-log-achilles.md`), fixed the CORS issue (Bug 3), added file-lock flushing for the memory race condition (Bug 4), set the confidence thresholds, and wrote the honest gap documentation in `achilles_notes.md`.
+- **What I checked:** Every test case was run manually and verified against expected output. The mock data schema was cross-referenced with CoffeeDB.pro documentation. The build log documents 6 bugs found and fixed.
+
+> *Saying "I built this with Claude and here's what I checked myself" reads as credibility, not weakness.* — FlyRank AI Fluency Framework
+
+---
+
+## Files
+
+| File | Purpose |
+|------|---------|
+| `achilles_api.py` | FastAPI backend: health, chat, memory, coffee data endpoints |
+| `achilles_chat.html` | Browser chat UI with identity-kit styling |
+| `test_achilles.py` | 10-query automated test suite |
+| `achilles_notes.md` | Honest gap documentation: what works, what's mock, how to swap |
+| `build-log-achilles.md` | 6 bugs found and fixed with before/after code |
+| `requirements.txt` | `fastapi`, `uvicorn`, `pydantic`, `requests` |
+| `DELIVERABLES.md` | Full index of every FL-01 through FL-08 deliverable |
+| `RETROSPECTIVE.md` | 500–800 word retrospective for the capstone |
+
+---
+
+## License
+
+MIT — built for educational portfolio use.
