@@ -1,4 +1,4 @@
-# FlyRank Portfolio: Achilles AI Coffee Expert
+﻿# FlyRank Portfolio: Achilles AI Coffee Expert
 
 **One claim:** I can ship domain-specific AI products from API to UI.
 **One person:** A Head of AI who needs to turn a raw domain API into a live, conversational product.
@@ -12,35 +12,36 @@ This repo is the proof. Every file earns its place.
 
 | Week | File | What It Is |
 |------|------|------------|
-| **Week 01 — Proof Statement** | [achilles-proof-statement.md](achilles-proof-statement.md) | The one-paragraph claim + person + action, plus the one-line why. |
-| **Week 01 — Sitemap** | [sitemap.md](sitemap.md) | 4-page portfolio sketch (Hero, Work, About strip, Contact), revised after pressure-test. |
-| **Week 01 — Claude Project Setup** | [claude-project-setup.md](claude-project-setup.md) | Custom instructions for the Achilles Claude Project: who I am, tone, goals, role definition. |
-| **Week 01 — Workflow Audit** | [workflow-audit.md](workflow-audit.md) | 15 real tasks classified by AI interaction type (Just Me / Delegate / Collaborate / Automate). |
-| **Week 01 — Target Tasks** | [target-tasks.md](target-tasks.md) | 3 tasks for FL-02–04 with measurable success definitions. |
-| **Week 01 — Pressure Test Prompt** | [pressure-test-prompt.md](pressure-test-prompt.md) | The exact prompt run in the Claude Project to validate the sitemap. |
-| **Week 01 — Pressure Test Output** | [pressure-test-output.md](pressure-test-output.md) | Full Claude response: brutal page-by-page critique + the ONE thing to change. |
-| **Week 02 — Prompt Engineering Log** | [prompt-engineering-log.md](prompt-engineering-log.md) | 6-version prompt iteration for Achilles (naive → role → context → few-shot → structure → decomposition). Cross-model comparison: Claude vs. ChatGPT. Reusable template. |
-| **Week 02 — Prompt Ladder (API Code)** | [prompt-ladder-apicode.md](prompt-ladder-apicode.md) | 6-run prompt ladder for CoffeeDB API integration code. Baseline + 5 versions, each with one named layer, output comparison, honest notes including one version that made output worse. Final reusable prompt. |
-| **Week 02 — Case Study** | [case-study-achilles.md](case-study-achilles.md) | Framed case study with 3 beats (problem, what I did, what came of it), voice card, bio copy, CTA copy, 3 before/after examples, editing checklist. |
-| **Week 03 — Curated Image Set** | [curated-image-set.md](curated-image-set.md) | 8-image keeper set mapped to sitemap, style spec for AI-generated images, rejection note with specific judgment, real vs. AI decisions. |
-| **Week 03 — Asset Guide** | [assets/screenshot-and-prompt-guide.md](assets/screenshot-and-prompt-guide.md) | Screenshot checklist for 5 real captures + tool-specific AI image prompts (DALL-E, Midjourney, Stable Diffusion) with negative prompts and rejection criteria. |
+| **Week 01 — Proof Statement** | [`achilles-proof-statement.md`](achilles-proof-statement.md) | The one-paragraph claim + person + action, plus the one-line why. |
+| **Week 01 — Sitemap** | [`sitemap.md`](sitemap.md) | 4-page portfolio sketch (Hero, Work, About strip, Contact), revised after pressure-test. |
+| **Week 01 — Claude Project Setup** | [`claude-project-setup.md`](claude-project-setup.md) | Custom instructions for the Achilles Claude Project: who I am, tone, goals, role definition. |
+| **Week 01 — Workflow Audit** | [`workflow-audit.md`](workflow-audit.md) | 15 real tasks classified by AI interaction type (Just Me / Delegate / Collaborate / Automate). |
+| **Week 01 — Target Tasks** | [`target-tasks.md`](target-tasks.md) | 3 tasks for FL-02–04 with measurable success definitions. |
+| **Week 01 — Pressure Test Prompt** | [`pressure-test-prompt.md`](pressure-test-prompt.md) | The exact prompt run in the Claude Project to validate the sitemap. *(Working doc)* |
+| **Week 01 — Pressure Test Output** | [`pressure-test-output.md`](pressure-test-output.md) | Full Claude response: brutal page-by-page critique + the ONE thing to change. |
+| **Week 02 — Prompt Engineering Log** | [`prompt-engineering-log.md`](prompt-engineering-log.md) | 6-version prompt iteration for Achilles (naive → role → context → few-shot → structure → decomposition). Cross-model comparison: Claude vs. ChatGPT. Reusable template. |
+| **Week 02 — Prompt Ladder (API Code)** | [`prompt-ladder-apicode.md`](prompt-ladder-apicode.md) | 6-run prompt ladder for CoffeeDB API integration code. Baseline + 5 versions, each with one named layer, output comparison, honest notes including one version that made output worse. Final reusable prompt. |
+| **Week 02 — Case Study** | [`case-study-achilles.md`](case-study-achilles.md) | Framed case study with 3 beats (problem, what I did, what came of it), voice card, bio copy, CTA copy, 3 before/after examples, editing checklist. |
+| **Week 03 — Curated Image Set** | [`curated-image-set.md`](curated-image-set.md) | 8-image keeper set mapped to sitemap, style spec for AI-generated images, rejection note with specific judgment, real vs. AI decisions. |
+| **Week 03 — Asset Guide** | [`assets/screenshot-and-prompt-guide.md`](assets/screenshot-and-prompt-guide.md) | Screenshot checklist for 5 real captures + tool-specific AI image prompts (DALL-E, Midjourney, Stable Diffusion) with negative prompts and rejection criteria. |
 | **Week 03 — Identity Kit** | [identity-kit.md](identity-kit.md) | Fonts (Space Grotesk + Inter), 4-color palette with hex codes, favicon.svg monogram, two-line style note added to Claude Project. |
 | **Week 04 — Three Roads (Stack Choice)** | [three-roads.md](three-roads.md) | Three genuine stack options with trade-offs, pressure-test, and honest decision: static HTML on GitHub Pages. |
-| **Week 04 — Empty but Live** | [empty-but-live.md](empty-but-live.md) | GitHub Pages blank page status, 404 + live screenshots, activation steps, phone verification, and content map readiness. |
-| **Week 04 — Agent Concepts & MCP** | [agent-concepts-mcp.md](agent-concepts-mcp.md) | Workflow vs agent distinction, FL-04 classification, MCP three primitives, working filesystem MCP server with evidence of three tool calls. |
-| **Week 04 — Automation Workflow v2** | [automation-workflow-v2.md](automation-workflow-v2.md) | 4-step no-code pipeline (Draft → Critique → Revise → Format) run on 5 real deliverables. Claude Project instructions, time accounting, honest failure points. |
-| **Week 05 — Explain It Like You Built It** | [explain-it-like-you-built-it-achilles.md](explain-it-like-you-built-it-achilles.md) | Plain-words explanation of Achilles' preference memory system: regex extraction, JSON persistence, score boosting, and matching engine — as if explaining to a friend. |
-| **Week 05 — Design Your Personal Agent** | [personal-agent-spec-achilles.md](personal-agent-spec-achilles.md) | Achilles as a personal coffee research/recommendation assistant. Job, user, frequency, tools, draft instructions, 5 eval cases, guardrails, platform choice with rejected alternatives. |
-| **Week 05 — Build the Agent** | [build-log-achilles.md](build-log-achilles.md) + [achilles_api.py](achilles_api.py) + [achilles_chat.html](achilles_chat.html) + [achilles_notes.md](achilles_notes.md) + [test_achilles.py](test_achilles.py) | Working coffee recommendation agent: FastAPI backend with mock CoffeeDB data, rule-based matching engine, preference memory (regex + JSON), CORS-enabled browser chat UI. 10/10 tests pass. Build log with 6 bugs fixed. |
-| **Week 06 — Backend AI Engineering** | See [Artificiall](https://github.com/PawelPikulik/Artificiall) repo | FastAPI CRUD API → SQLite → Docker + PostgreSQL → Supabase Auth → Polite scraper → AI LLM endpoint (Groq). |
-| **Week 07 — Personal Site** | See [personal-site branch](https://github.com/PawelPikulik/Achilles/tree/personal-site) | Hardened portfolio: Netlify Forms, SEO, accessibility, PageSpeed 98/100. |
+| **Week 04 — Empty but Live** | [`empty-but-live.md`](empty-but-live.md) | GitHub Pages blank page status, 404 + live screenshots, activation steps, phone verification, and content map readiness. |
+| **Week 04 — Agent Concepts & MCP** | [`agent-concepts-mcp.md`](agent-concepts-mcp.md) | Workflow vs agent distinction, FL-04 classification, MCP three primitives, working filesystem MCP server with evidence of three tool calls. |
+| **Week 04 — Automation Workflow v2** | [`automation-workflow-v2.md`](automation-workflow-v2.md) | 4-step no-code pipeline (Draft → Critique → Revise → Format) run on 5 real deliverables. Claude Project instructions, time accounting, honest failure points. |
+| **Week 05 — Explain It Like You Built It** | [`explain-it-like-you-built-it-achilles.md`](explain-it-like-you-built-it-achilles.md) | Plain-words explanation of Achilles' preference memory system: regex extraction, JSON persistence, score boosting, and matching engine — as if explaining to a friend. |
+| **Week 05 — Design Your Personal Agent** | [`personal-agent-spec-achilles.md`](personal-agent-spec-achilles.md) | Achilles as a personal coffee research/recommendation assistant. Job, user, frequency, tools, draft instructions, 5 eval cases, guardrails, platform choice with rejected alternatives. |
+| **Week 05 — Build the Agent** | [`build-log-achilles.md`](build-log-achilles.md) + [`achilles_api.py`](achilles_api.py) + [`achilles_chat.html`](achilles_chat.html) + [`achilles_notes.md`](achilles_notes.md) + [`test_achilles.py`](test_achilles.py) | Working coffee recommendation agent: FastAPI backend with mock CoffeeDB data, rule-based matching engine, preference memory (regex + JSON), CORS-enabled browser chat UI. 10/10 tests pass. Build log with 6 bugs fixed. |
+| **Week 06 — Backend AI Engineering** | See [`Artificiall`](https://github.com/PawelPikulik/Artificiall) repo | FastAPI CRUD API → SQLite → Docker + PostgreSQL → Supabase Auth → Polite scraper → AI LLM endpoint (Groq). |
+| **Week 07 — Personal Site** | See [`personal-site` branch](https://github.com/PawelPikulik/Achilles/tree/personal-site) | Hardened portfolio: Netlify Forms, SEO, accessibility, PageSpeed 98/100. |
 | **Week 08 — Capstone** | [README.md](README.md) + [RETROSPECTIVE.md](RETROSPECTIVE.md) + this file | Production README, retrospective, submission index. |
+| **Week 08 — The Plan to Keep Building** | [PLAN-TO-KEEP-BUILDING.md](PLAN-TO-KEEP-BUILDING.md) | 5-step process for adding the next case study, named next piece (Achilles v2 — LLM query layer), reminder set as [issue #1](https://github.com/PawelPikulik/Achilles/issues/1) with milestone due 2026-10-10, preserved Claude Project + identity kit + template. |
 
 ---
 
 ## How to Read This Repo
 
-Start with the **proof statement** — it defines the lens. Then the **sitemap** — it defines the structure. Then the **case study** — it contains the voice, the copy, and the before/after editing. The **prompt engineering** and **prompt ladder** files prove the technical and iterative discipline.
+Start with the **proof statement** — it defines the lens. Then the **sitemap** — it defines the structure. Then the **case study** — it contains the voice, the copy, and the before/after editing. The **prompt engineering** and **prompt ladder** files prove the technical and iterative discipline. The **image set** documents the visual curation strategy.
 
 Everything links back to the claim: *domain-specific AI products from API to UI.*
 
@@ -48,10 +49,14 @@ Everything links back to the claim: *domain-specific AI products from API to UI.
 
 ## Key Links
 
+- Week 01 Brief: https://aifluency.flyrank.ai/week-01.html#what-are-you-proving
+- Week 02 Brief: https://aifluency.flyrank.ai/week-02.html#frame-it-as-cases
+- Week 03 Brief: https://aifluency.flyrank.ai/week-03.html#curate-your-images
+- Data Source: https://www.coffeedb.pro/api
+- Anthropic Prompt Engineering Tutorial: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering
+- Ethan Mollick — On-boarding your AI Intern: https://www.oneusefulthing.org/p/on-boarding-your-ai-intern
 - Live Portfolio: https://pawelpikulik.netlify.app
 - Backend Repo: https://github.com/PawelPikulik/Artificiall
-- Week 01 Brief: https://aifluency.flyrank.ai/week-01.html#what-are-you-proving
-- Data Source: https://www.coffeedb.pro/api
 
 ---
 
@@ -59,27 +64,29 @@ Everything links back to the claim: *domain-specific AI products from API to UI.
 
 | Item | Status |
 |------|--------|
-| Proof statement (claim + person + action) | Final |
-| Sitemap (4 pages, post pressure-test) | Final |
-| Claude Project configured | Instructions documented |
-| Workflow audit (15 tasks, 4 classifications) | Final |
-| Target tasks (3 tasks, measurable definitions) | Final |
-| Pressure-test run + output saved | Final |
-| Prompt engineering log (6 versions, cross-model comparison) | Final |
-| Prompt ladder (baseline + 5 versions, honest notes) | Final |
-| Case study (3 beats, voice card, before/after) | Final |
-| Identity kit (fonts, palette, favicon, style note) | Final |
-| Three Roads stack choice (options, pressure-test, rationale) | Final |
-| Agent concepts & MCP (workflow vs agent, MCP server, three tasks) | Final |
-| Empty but Live (GitHub Pages status, screenshot, content ready) | Final — enabled and verified live on phone |
-| Automation workflow v2 (4-step pipeline, 5 runs, time accounting) | Final |
-| Explain It Like You Built It — Achilles preference memory (regex, JSON, scoring engine) | Final |
-| Design Your Personal Agent — Achilles coffee assistant spec (job, evals, guardrails, platform) | Final |
-| Build the Agent — Achilles MVP build log (6 bugs, 10/10 tests, CORS, memory race) | Final |
-| Image set (8 keepers, style spec, rejection note) | Documented; screenshots and AI images to be captured/generated |
-| Live portfolio site (Hero, Work, Credibility Strip, Contact) | Built (index.html + styles.css); real screenshots/images pending |
-| Achilles API integration (live CoffeeDB.pro connection) | MVP built with mock data; CoffeeDB.pro unreachable — gap documented in achilles_notes.md |
-| Achilles conversation interface (prompts + memory) | MVP built — rule-based matching + preference memory + chat UI; 10/10 tests pass |
-| Backend AI Engineering (Artificiall) | BE-02 through BE-07 completed and pushed |
-| Personal Site Hardening | Week 7 complete — form, SEO, speed, accessibility |
-| Capstone README + Retrospective | Week 8 complete |
+| Proof statement (claim + person + action) | ✅ Final |
+| Sitemap (4 pages, post pressure-test) | ✅ Final |
+| Claude Project configured | ✅ Instructions documented |
+| Workflow audit (15 tasks, 4 classifications) | ✅ Final |
+| Target tasks (3 tasks, measurable definitions) | ✅ Final |
+| Pressure-test run + output saved | ✅ Final |
+| Prompt engineering log (6 versions, cross-model comparison) | ✅ Final |
+| Prompt ladder (baseline + 5 versions, honest notes) | ✅ Final |
+| Case study (3 beats, voice card, before/after) | ✅ Final |
+| Identity kit (fonts, palette, favicon, style note) | ✅ Final |
+| Three Roads stack choice (options, pressure-test, rationale) | ✅ Final |
+| Agent concepts & MCP (workflow vs agent, MCP server, three tasks) | ✅ Final |
+| Empty but Live (GitHub Pages status, screenshot, content ready) | ✅ Final — enabled and verified live on phone |
+| Automation workflow v2 (4-step pipeline, 5 runs, time accounting) | ✅ Final |
+| Explain It Like You Built It — Achilles preference memory (regex, JSON, scoring engine) | ✅ Final |
+| Design Your Personal Agent — Achilles coffee assistant spec (job, evals, guardrails, platform) | ✅ Final |
+| Build the Agent — Achilles MVP build log (6 bugs, 10/10 tests, CORS, memory race) | ✅ Final |
+| Image set (8 keepers, style spec, rejection note) | ⚠️ Documented; screenshots and AI images to be captured/generated |
+| Live portfolio site (Hero, Work, Credibility Strip, Contact) | ⚠️ Built (`index.html` + `styles.css`); real screenshots/images pending |
+| Achilles API integration (live CoffeeDB.pro connection) | ⚠️ MVP built with mock data; CoffeeDB.pro unreachable — gap documented in `achilles_notes.md` |
+| Achilles conversation interface (prompts + memory) | ✅ MVP built — rule-based matching + preference memory + chat UI; 10/10 tests pass |
+| Backend AI Engineering (Artificiall) | ✅ BE-02 through BE-07 completed and pushed |
+| Personal Site Hardening | ✅ Week 7 complete — form, SEO, speed, accessibility |
+| Capstone README + Retrospective | ✅ Week 8 complete |
+
+*✅ = Documented and reviewed. ⚠️ = Documented but requires manual execution (screenshots, image generation). ⏳ = Pending future phases.*
