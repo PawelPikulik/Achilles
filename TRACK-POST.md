@@ -8,7 +8,7 @@
 
 **Proof statement:** I can ship domain-specific AI products from API to UI. Audience: a Head of AI who needs to turn a raw domain API into a live, conversational product. Action: reach out to me to build theirs.
 
-**Project:** Achilles — an AI Coffee Expert that answers coffee questions and remembers preferences using live data from CoffeeDB.pro.
+**Project:** Achilles — a Coffee Edition that answers coffee questions and remembers preferences using live data from CoffeeDB.pro.
 
 ## Week 01 — Draw the Path + Workflow Audit
 - Sitemap (4 sections: Hero, Work, Credibility Strip, Contact): [`sitemap.md`](https://github.com/PawelPikulik/FlyRank/blob/main/sitemap.md)

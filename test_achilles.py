@@ -1,4 +1,4 @@
-"""Test Achilles AI Coffee Expert — 10 Representative Queries
+"""Test Achilles Coffee Edition — 10 Representative Queries
 
 Run after starting the API server:
     python achilles_api.py

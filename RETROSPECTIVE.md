@@ -8,7 +8,7 @@
 
 Week 1, I claimed one thing: *"I can ship domain-specific AI products from API to UI."* The claim was aspirational. I had written APIs before, but never one with auth, never one that talked to an LLM, never one that survived a broken dependency. I had never built a chat UI that actually sent messages to a backend and showed structured results. I had never written a README a stranger could follow.
 
-The project I chose was Achilles — an AI Coffee Expert. I picked it because coffee is a domain I care about, and because the data source (CoffeeDB.pro) looked real enough to force me to think about schema compatibility, auth, and graceful failure.
+The project I chose was Achilles — a Coffee Edition. I picked it because coffee is a domain I care about, and because the data source (CoffeeDB.pro) looked real enough to force me to think about schema compatibility, auth, and graceful failure.
 
 ## What changed
 

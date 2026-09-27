@@ -1,4 +1,4 @@
-"""Achilles AI Coffee Expert — MVP Backend
+"""Achilles Coffee Edition — MVP Backend
 
 FastAPI backend with:
 - /health        health check
@@ -232,7 +232,7 @@ def _extract_preference(text: str) -> Optional[tuple[str, str]]:
 #  FastAPI app
 # ---------------------------------------------------------------------------
 
-app = FastAPI(title="Achilles AI Coffee Expert", version="0.1.0")
+app = FastAPI(title="Achilles Coffee Edition", version="0.1.0")
 
 app.add_middleware(
     CORSMiddleware,

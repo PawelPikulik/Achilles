@@ -4,7 +4,7 @@
 
 | # | Task | Classification | Rationale |
 |---|------|----------------|-----------|
-| 1 | Write and refine proof statements for portfolio projects (e.g., Achilles AI Coffee Expert) | **Collaborate with AI** | AI interviews me with sharp questions to narrow the claim, but I must own the final statement. AI cannot decide what I actually believe. |
+| 1 | Write and refine proof statements for portfolio projects (e.g., Achilles Coffee Edition) | **Collaborate with AI** | AI interviews me with sharp questions to narrow the claim, but I must own the final statement. AI cannot decide what I actually believe. |
 | 2 | Pressure-test portfolio sitemaps and page copy against claim + audience + action | **Collaborate with AI** | AI acts as a brutal tutor to find gaps, but I decide which feedback to act on and what stays. |
 | 3 | Debug and integrate third-party APIs (e.g., CoffeeDB.pro) into AI projects | **Just me** | AI can generate boilerplate, but I must read docs, understand rate limits, handle auth, and verify live responses. Outsourcing this to AI without review risks broken integrations. |
 | 4 | Build and deploy Git commits to portfolio repos (e.g., FlyRank) | **Just me** | I write commit messages that explain *why* a change was made. AI-generated commits often miss the strategic rationale. I also want to understand my own repo history. |

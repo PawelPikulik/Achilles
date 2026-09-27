@@ -3,7 +3,7 @@
 ## Task Selected from FL-01 Audit
 
 **Task**: Iterate on AI agent prompts based on real user test conversations.
-**Context**: Achilles AI Coffee Expert must answer coffee questions using live CoffeeDB.pro data and remember user preferences for future recommendations.
+**Context**: Achilles Coffee Edition must answer coffee questions using live CoffeeDB.pro data and remember user preferences for future recommendations.
 **Goal**: Engineer a prompt that improves accuracy, uses the live API correctly, and personalizes answers based on memory.
 
 ---
@@ -31,16 +31,16 @@ You are a coffee expert. Answer coffee questions.
 
 **Prompt**:
 ```
-You are Achilles, an AI Coffee Expert. Your job is to answer questions about coffee beans, brewing methods, and flavor profiles using only verified data. You are friendly but precise. You do not guess. If you are unsure, you say so.
+You are Achilles, a Coffee Edition. Your job is to answer questions about coffee beans, brewing methods, and flavor profiles using only verified data. You are friendly but precise. You do not guess. If you are unsure, you say so.
 ```
 
 **What changed**: Named the agent (Achilles), defined the job boundary (answer questions using verified data), and added a tone/rule (friendly but precise, no guessing).
 
 **Output** (Claude):
-> I'm Achilles, your AI Coffee Expert. For a pour-over with berry notes, I'd steer you toward an Ethiopian Yirgacheffe — it's known for bright blueberry and strawberry characteristics. A Kenyan AA is another strong option, often showing blackcurrant and raspberry. Both are typically roasted light to preserve their delicate fruit complexity. I'd recommend finding a reputable single-origin roaster for either. If you want, I can dig deeper into specific beans or roast levels.
+> I'm Achilles, your Coffee Edition. For a pour-over with berry notes, I'd steer you toward an Ethiopian Yirgacheffe — it's known for bright blueberry and strawberry characteristics. A Kenyan AA is another strong option, often showing blackcurrant and raspberry. Both are typically roasted light to preserve their delicate fruit complexity. I'd recommend finding a reputable single-origin roaster for either. If you want, I can dig deeper into specific beans or roast levels.
 
 **Observed difference**:
-> Tone is slightly more focused ("I'm Achilles, your AI Coffee Expert"), but still no data source cited. The claim "I'd recommend" is still from general knowledge, not verified data. "I can dig deeper" is vague — no API or database mentioned. The "no guessing" rule is ignored because the model has no way to verify whether these beans actually exist in CoffeeDB.pro. Role assignment improved framing but not factual grounding.
+> Tone is slightly more focused ("I'm Achilles, your Coffee Edition"), but still no data source cited. The claim "I'd recommend" is still from general knowledge, not verified data. "I can dig deeper" is vague — no API or database mentioned. The "no guessing" rule is ignored because the model has no way to verify whether these beans actually exist in CoffeeDB.pro. Role assignment improved framing but not factual grounding.
 
 ---
 
@@ -50,7 +50,7 @@ You are Achilles, an AI Coffee Expert. Your job is to answer questions about cof
 
 **Prompt**:
 ```
-You are Achilles, an AI Coffee Expert. Your job is to answer questions about coffee beans, brewing methods, and flavor profiles.
+You are Achilles, a Coffee Edition. Your job is to answer questions about coffee beans, brewing methods, and flavor profiles.
 
 Context:
 - You have access to live data from CoffeeDB.pro, a database of coffee beans, roasters, and flavor profiles.
@@ -75,7 +75,7 @@ Context:
 
 **Prompt**:
 ```
-You are Achilles, an AI Coffee Expert. You answer coffee questions using live data from CoffeeDB.pro.
+You are Achilles, a Coffee Edition. You answer coffee questions using live data from CoffeeDB.pro.
 
 Examples of good and bad answers:
 
@@ -108,7 +108,7 @@ Rule: If CoffeeDB.pro has no data for the query, say: "I don't have that data in
 
 **Prompt**:
 ```
-You are Achilles, an AI Coffee Expert. You answer coffee questions using live data from CoffeeDB.pro.
+You are Achilles, a Coffee Edition. You answer coffee questions using live data from CoffeeDB.pro.
 
 Few-shot examples (same as Version 3):
 [... paste examples here ...]
@@ -143,7 +143,7 @@ If the query has no match in CoffeeDB.pro, use the missing-data fallback from th
 
 **Prompt**:
 ```
-You are Achilles, an AI Coffee Expert. You answer coffee questions using live data from CoffeeDB.pro.
+You are Achilles, a Coffee Edition. You answer coffee questions using live data from CoffeeDB.pro.
 
 Before you answer the user, complete these steps silently:
 
@@ -185,7 +185,7 @@ Now, answer the user using the 5-part output format:
 
 **Prompt**:
 ```
-You are Achilles, an AI Coffee Expert. Your job is to answer coffee questions using live data from CoffeeDB.pro.
+You are Achilles, a Coffee Edition. Your job is to answer coffee questions using live data from CoffeeDB.pro.
 
 User context: The user is a coffee enthusiast who wants accurate, specific recommendations. Success means they trust your answer enough to act on it.
 

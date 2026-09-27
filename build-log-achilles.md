@@ -6,7 +6,7 @@
 
 ## Project Overview
 
-**Project:** Achilles — AI Coffee Expert  
+**Project:** Achilles — Coffee Edition  
 **Platform:** FastAPI backend + vanilla HTML chat frontend  
 **Scope:** Single-user MVP. Recommendation engine with preference memory.  
 **Date:** 2026-09-07 to 2026-09-09  

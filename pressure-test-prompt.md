@@ -2,7 +2,7 @@
 
 ## Prompt to paste into Claude Project
 
-I have sketched a 4-page portfolio sitemap for my Achilles AI Coffee Expert project:
+I have sketched a 4-page portfolio sitemap for my Achilles Coffee Edition project:
 
 1. Hero page — states the claim: "I ship domain-specific AI products from API to UI"
 2. Work/Case study page — deep dive on Achilles as the proof

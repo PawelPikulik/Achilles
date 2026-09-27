@@ -1,4 +1,4 @@
-# Case Study: Achilles AI Coffee Expert
+# Case Study: Achilles Coffee Edition
 
 ## Voice Card
 
@@ -9,7 +9,7 @@
 
 ---
 
-## Case Study: Achilles AI Coffee Expert
+## Case Study: Achilles Coffee Edition
 
 ### The Problem
 
@@ -54,7 +54,7 @@ The specific challenge: CoffeeDB.pro has structured data on beans, roasters, sco
 
 **Longer version (if needed for a specific context):**
 
-> I'm a builder who turns raw domain APIs into products people actually use. My current project is Achilles, an AI Coffee Expert that answers questions using live CoffeeDB.pro data and remembers preferences across sessions. I designed the full stack: API integration, prompt engineering across six iterations, cross-model testing, and persistent memory. Before this, I [relevant background — add if you have it]. I don't do generic portfolios. Every page here earns its place.
+> I'm a builder who turns raw domain APIs into products people actually use. My current project is Achilles, a Coffee Edition that answers questions using live CoffeeDB.pro data and remembers preferences across sessions. I designed the full stack: API integration, prompt engineering across six iterations, cross-model testing, and persistent memory. Before this, I [relevant background — add if you have it]. I don't do generic portfolios. Every page here earns its place.
 
 ---
 

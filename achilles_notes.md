@@ -2,7 +2,7 @@
 
 ## What Was Built
 
-A working FastAPI backend (`achilles_api.py`) and a browser chat UI (`achilles_chat.html`) for Achilles, the AI Coffee Expert. The system answers coffee questions with structured data, tracks user preferences across sessions, and shows confidence levels and sources for every answer.
+A working FastAPI backend (`achilles_api.py`) and a browser chat UI (`achilles_chat.html`) for Achilles, the Coffee Edition. The system answers coffee questions with structured data, tracks user preferences across sessions, and shows confidence levels and sources for every answer.
 
 **API endpoints:**
 - `GET /health` — health check, reports data source (live vs mock)

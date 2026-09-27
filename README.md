@@ -1,4 +1,4 @@
-# Achilles — AI Coffee Expert
+# Achilles — Coffee Edition
 
 A domain-specific AI product that answers coffee questions using structured bean data, remembers your taste preferences across sessions, and recommends beans that match both your query and your stated tastes.
 

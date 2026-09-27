@@ -34,7 +34,7 @@ Every page ladders up to **one action**: email me to turn their domain API into 
 
 **Purpose:** This is the only page that proves the claim. Everything else is framing.
 
-**Case on this page:** Achilles AI Coffee Expert — the strongest and only case. Lead with it because it is the only full-stack build.
+**Case on this page:** Achilles Coffee Edition — the strongest and only case. Lead with it because it is the only full-stack build.
 
 | Section | What It Proves | Content |
 |---------|---------------|---------|

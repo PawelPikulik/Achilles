@@ -12,7 +12,7 @@
 > 3. **What my portfolio needs to do:** Display a case study with text, image galleries (screenshots of code, API responses, architecture diagrams), links to code repos, and a contact email. No blog. No CMS. No testimonials page. No dynamic content for the portfolio itself.
 > 4. **How my work must be displayed:** Long-form reading (the case study text), image galleries (screenshots), code repo links, and potentially an embedded demo or iframe if I build Achilles live. The Head of AI must see the proof in 30 seconds and believe it in 3 minutes.
 >
-> **Backend question:** The portfolio itself does not need a backend. The Achilles AI Coffee Expert (the project in the case study) would need a backend, but that is a separate project, not the portfolio. For the portfolio, static is fine unless the embedded demo requires it.
+> **Backend question:** The portfolio itself does not need a backend. The Achilles Coffee Edition (the project in the case study) would need a backend, but that is a separate project, not the portfolio. For the portfolio, static is fine unless the embedded demo requires it.
 >
 > Give me three stack options, simplest to most powerful, with real trade-offs. For each: how I'd build, where I'd host (free), whether it needs a backend, and the honest trade-off.
 

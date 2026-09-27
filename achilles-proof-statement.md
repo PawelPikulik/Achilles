@@ -2,7 +2,7 @@
 
 ## Proof Statement
 
-I can ship domain-specific AI products from API to UI, and this repo is proof for the Head of AI who needs to turn a raw domain API into a live, conversational product. Achilles, the AI Coffee Expert, answers coffee questions and remembers taste preferences using live data from CoffeeDB.pro—exactly the kind of end-to-end build I want them to remember the author for.
+I can ship domain-specific AI products from API to UI, and this repo is proof for the Head of AI who needs to turn a raw domain API into a live, conversational product. Achilles, the Coffee Edition, answers coffee questions and remembers taste preferences using live data from CoffeeDB.pro—exactly the kind of end-to-end build I want them to remember the author for.
 
 ## Why This Exists
 
@@ -11,5 +11,5 @@ I cannot prove that I can bridge a third-party API, an LLM, and persistent memor
 ## Links
 
 - Week 01 Brief: https://aifluency.flyrank.ai/week-01.html#what-are-you-proving
-- Project: Achilles as AI Coffee Expert
+- Project: Achilles as Coffee Edition
 - Data Source: https://www.coffeedb.pro/api?utm_source=chatgpt.com

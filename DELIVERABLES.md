@@ -1,4 +1,4 @@
-﻿# FlyRank Portfolio: Achilles AI Coffee Expert
+﻿# FlyRank Portfolio: Achilles Coffee Edition
 
 **One claim:** I can ship domain-specific AI products from API to UI.
 **One person:** A Head of AI who needs to turn a raw domain API into a live, conversational product.
